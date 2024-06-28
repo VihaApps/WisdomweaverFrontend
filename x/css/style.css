@@ -1,0 +1,127 @@
+.container-fluid {
+  background-color: rgb(0, 75, 132);
+}
+
+.navbar-brand {
+  color: rgb(0, 0, 0);
+}
+
+body {
+  background-color: rgb(0, 75, 132);
+}
+
+.main {
+  background-color: white;
+}
+
+.card {
+  background-color: white;
+  color: rgb(5, 0, 0);
+  border-radius: 1.5rem;
+}
+
+.card-body {
+  padding: 4rem;
+  text-align: center;
+}
+
+.fw-bold {
+  margin-bottom: 2rem;
+  text-transform: uppercase;
+}
+
+.form-outline {
+  color: white;
+  margin-bottom: 4rem;
+}
+
+button {
+  margin: 20px;
+}
+.custom-btn {
+  width: 130px;
+  height: 40px;
+  background-color: blue;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: "Lato", sans-serif;
+  font-weight: 500;
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+  box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.829),
+    7px 7px 20px 0px rgba(80, 61, 61, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
+  outline: none;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+  .custom-btn {
+    /* Adjust styles for smaller screens */
+    padding: 8px 16px;
+    /* Additional styles as needed */
+  }
+}
+
+.navbar {
+  color: white;
+  background-color: white;
+}
+
+.row,
+#cardRow {
+  margin-top: 5.5rem;
+  text-align: center;
+}
+
+.custom-card-bg {
+  background-color: rgb(254, 254, 254);
+  border-radius: 1rem;
+  margin-top: 10%;
+  padding: 20px;
+  width: 100%;
+  height: 70%;
+  justify-content: center;
+}
+
+.card-link {
+  text-decoration: none;
+}
+
+/* 1 */
+.btn-1 {
+  background: rgb(0, 75, 132) !important;
+  background: linear-gradient(
+    0deg,
+    rgba(6, 14, 131, 1) 0%,
+    rgba(12, 26, 180, 0.507) 100%
+  );
+  border: none;
+}
+
+.card-body {
+  /* min-height: 250px; */
+}
+
+.card-title {
+  /* padding-top: 40px; */
+}
+.card {
+  border-radius: 1rem !important;
+}
+
+::placeholder {
+  color: darkgray !important;
+}
+
+::-ms-input-placeholder {
+  color: darkgray !important;
+}
+h2 {
+  color: rgb(91, 91, 91);
+}
