@@ -6,10 +6,37 @@ body {
 body {
   /* display: flex;
   align-items: center; */
-  padding-top: 40px;
+  /* padding-top: 40px; */
   padding-bottom: 40px;
   background-color: rgb(239 242 244);
+  overflow: hidden;
 }
+/* Jay Css */
+.loginuser{
+  margin-top: 40px;
+}
+.backgroundimg{
+  position: absolute
+}
+
+.usecaseResources{
+  padding-left: 250px;
+  display: flex;
+  justify-content: space-evenly;
+  /* margin-left: 150px; */
+  gap: 0.5rem;
+}
+
+.loginRegister{
+  padding-left: 250px;
+  display: flex;
+  justify-content: space-evenly;
+  height: 25%;
+  margin-top: auto;
+}
+
+
+/* End */
 
 .form-signin {
   max-width: 330px;

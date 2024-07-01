@@ -1,130 +1,157 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Wisdom Weaver</title>
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
-      crossorigin="anonymous"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
-    <link href="css/site.css" rel="stylesheet" />
-    <link href="css/three-dots.css" rel="stylesheet" />
-  </head>
 
-  <body>
-    <main id="login" class="form-signin w-100 m-auto">
-      <h1 class="h3 mb-3 fw-normal text-center">Wisdom Weaver</h1>
-      <div class="form-floating">
-        <input
-          type="text"
-          class="form-control"
-          id="floatingInput"
-          placeholder="Username"
-        />
-        <label for="floatingInput">Username</label>
-      </div>
-      <div class="form-floating mt-2">
-        <input
-          type="password"
-          class="form-control"
-          id="floatingPassword"
-          placeholder="Password"
-        />
-        <label for="floatingPassword">Password</label>
-      </div>
-      <button class="w-100 btn btn-lg btn-primary" onclick="signIn();">
-        Sign in
-      </button>
-      <br />
-      <br />
-      <!-- <div class="row innostrat_class">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Wisdom Weaver</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link href="css/site.css" rel="stylesheet" />
+  <link href="css/three-dots.css" rel="stylesheet" />
+</head>
+
+<body>
+  <main id="login" class="form-signin w-100 m-auto">
+    <h1 class="h3 mb-3 fw-normal text-center">Wisdom Weaver</h1>
+    <div class="form-floating">
+      <input type="text" class="form-control" id="floatingInput" placeholder="Username" />
+      <label for="floatingInput">Username</label>
+    </div>
+    <div class="form-floating mt-2">
+      <input type="password" class="form-control" id="floatingPassword" placeholder="Password" />
+      <label for="floatingPassword">Password</label>
+    </div>
+    <button class="w-100 btn btn-lg btn-primary" onclick="signIn();">
+      Sign in
+    </button>
+    <br />
+    <br />
+    <!-- <div class="row innostrat_class">
       <a href="https://www.innostrat.in/" target="_blank" class="text-center">
         <img class="text-center" src="https://www.innostrat.in/images/logo2.png" /></a>
     </div> -->
-    </main>
-    <div id="landing_page" class="container">
-      <div class="row">
-        <h1>Welcome to WisdomWeaver</h1>
-        <h4>Gain intelligence from projects using AI</h4>
-        <p class="mt-3">
-          Lorem Ipsum is simply dummy text of the printing and typesetting
-          industry. Lorem Ipsum has been the industry's standard dummy text ever
-          since the 1500s, when an unknown printer took a galley of type and
-          scrambled it to make a type specimen book. It has survived not only
-          five centuries, but also the leap into electronic typesetting,
-          remaining essentially unchanged. It was popularised in the 1960s with
-          the release of Letraset sheets containing Lorem Ipsum passages, and
-          more recently with desktop publishing software like Aldus PageMaker
-          including versions of Lorem Ipsum.
-        </p>
+  </main>
+  <div id="landing_page" class="container-fluid">
+    <div class="row">
+      <div class="col-lg-7">
+        <div class="row">
+          <div class="loginuser">
+            <img src="/images/WelcomeUser.png" alt="Welcome User" class="img-fluid" />
+          </div>
+        </div>
+        <div class="container">
+          <div class="row" style="margin-top: 100px">
+            <h1>Welcome to WisdomWeaver</h1>
+            <h4>Gain intelligence from projects using AI</h4>
+            <p class="mt-3">
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard dummy
+              text ever since the 1500s, when an unknown printer took a galley
+              of type and scrambled it to make a type specimen book. It has
+              survived not only five centuries, but also the leap into
+              electronic typesetting, remaining essentially unchanged. It was
+              popularised in the 1960s with the release of Letraset sheets
+              containing Lorem Ipsum passages, and more recently with desktop
+              publishing software like Aldus PageMaker including versions of
+              Lorem Ipsum.
+            </p>
+            <div class="row" style="margin-top: 20px">
+              <span>
+                <i class="fa fa-arrow-right bgcolor-change" style="font-size: 48px; float: left; padding: 5px"
+                  onclick="landing_page_click()"></i>
+              </span>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="row" style="margin-top: 20px">
-        <span>
-          <i
-            class="fa fa-arrow-right bgcolor-change"
-            style="font-size: 48px; float: right; padding: 5px"
-            onclick="landing_page_click()"
-          ></i>
-        </span>
+      <div class="col-lg-5">
+        <div class="row">
+          <div class="col-lg-3">
+            <img src="/images/Background.png" class="backgroundimg" style="width: 42%;" />
+          </div>
+        </div>
+        <div class="row ">
+          <div class="col-lg-6 usecaseResources">
+            <!-- Dropdwon -->
+            <div class="dropdown mt-3">
+              <button class="btn btn-secondary dropdown-toggle" type="button" id="useCasesDropdown"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                Use Cases
+              </button>
+              <ul class="dropdown-menu" aria-labelledby="useCasesDropdown">
+                <li><a class="dropdown-item" href="#">Use Case 1</a></li>
+                <li><a class="dropdown-item" href="#">Use Case 2</a></li>
+                <li><a class="dropdown-item" href="#">Use Case 3</a></li>
+              </ul>
+            </div>
+
+            <!-- Resources Dropdown -->
+            <div class="dropdown mt-3">
+              <button class="btn btn-secondary dropdown-toggle" type="button" id="resourcesDropdown"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                Resources
+              </button>
+              <ul class="dropdown-menu" aria-labelledby="resourcesDropdown">
+                <li><a class="dropdown-item" href="#">Resource 1</a></li>
+                <li><a class="dropdown-item" href="#">Resource 2</a></li>
+                <li><a class="dropdown-item" href="#">Resource 3</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-6 loginRegister">
+            <!-- Login-Register -->
+            <button class="btn btn-primary" onclick="signIn();">Login</button>
+            <button class="btn btn-secondary" onclick="register();">Sign Up</button>
+          </div>
+
+        </div>
       </div>
     </div>
-    <div id="options_page" class="container">
-      <div class="row">
-        <h1>Choose from below</h1>
-      </div>
-      <div class="row" style="margin-top: 100px">
-        <div class="col-sm-6">
-          <a
-            href="#"
-            class="bgcolor-change text-decoration-none"
-            onclick="options_page_click('offboarding')"
-          >
-            <div class="card">
-              <div class="card-body box-min-height">
-                <h5 class="card-title card-title-box">Offboarding</h5>
-                <!-- <p class="card-text"></p>
+  </div>
+  <div id="options_page" class="container">
+    <div class="row">
+      <h1>Choose from below</h1>
+    </div>
+    <div class="row" style="margin-top: 100px">
+      <div class="col-sm-6">
+        <a href="#" class="bgcolor-change text-decoration-none" onclick="options_page_click('offboarding')">
+          <div class="card">
+            <div class="card-body box-min-height">
+              <h5 class="card-title card-title-box">Offboarding</h5>
+              <!-- <p class="card-text"></p>
               <a href="#" class="btn btn-primary" onclick="options_page_click()">Offboarding!</a> -->
-              </div>
             </div>
-          </a>
-        </div>
-        <div class="col-sm-6">
-          <a
-            href="#"
-            class="bgcolor-change text-decoration-none"
-            onclick="options_page_click('knowledge_source')"
-          >
-            <!-- <a
+          </div>
+        </a>
+      </div>
+      <div class="col-sm-6">
+        <a href="#" class="bgcolor-change text-decoration-none" onclick="options_page_click('knowledge_source')">
+          <!-- <a
             href="#"
             class="bgcolor-change text-decoration-none"
             onclick="alert('Development in progress')"
           > -->
-            <div class="card">
-              <div class="card-body box-min-height">
-                <h5 class="card-title card-title-box">
-                  Access Knowledge Source
-                </h5>
-                <!-- <p class="card-text"></p>
+          <div class="card">
+            <div class="card-body box-min-height">
+              <h5 class="card-title card-title-box">
+                Access Knowledge Source
+              </h5>
+              <!-- <p class="card-text"></p>
               <a href="#" class="btn btn-primary">Go to the Knowledge Source</a> -->
-              </div>
             </div>
-          </a>
-        </div>
+          </div>
+        </a>
       </div>
     </div>
-    <div id="choose_avatar" class="container">
-      <div class="row">
-        <h1>Select your avatar</h1>
-      </div>
-      <div class="row" style="margin-top: 100px">
-        <!-- <div class="col-6 bgcolor-change" id="avatar_icons_female">
+  </div>
+  <div id="choose_avatar" class="container">
+    <div class="row">
+      <h1>Select your avatar</h1>
+    </div>
+    <div class="row" style="margin-top: 100px">
+      <!-- <div class="col-6 bgcolor-change" id="avatar_icons_female">
           <center>
             <a onclick="choose_avatar_page_click('female')"
               ><img
@@ -135,28 +162,23 @@
             <h4>Jane</h4>
           </center>
         </div> -->
-        <div class="col-6 offset-3 bgcolor-change" id="avatar_icons_male">
-          <center>
-            <a onclick="choose_avatar_page_click('male')"
-              ><img
-                class="img-avatar"
-                src="images/man-icon-png-14556.png"
-                height="256"
-            /></a>
-            <h4>Jenny</h4>
-          </center>
-        </div>
-        <div class="col-12" style="margin-top: 7rem !important">
-          <center>
-            <a href="#" class="text-decoration-none" onclick="startTextChat();"
-              >I don't want to use an Avatar. I want to have a text chat.</a
-            >
-          </center>
-        </div>
+      <div class="col-6 offset-3 bgcolor-change" id="avatar_icons_male">
+        <center>
+          <a onclick="choose_avatar_page_click('male')"><img class="img-avatar" src="images/man-icon-png-14556.png"
+              height="256" /></a>
+          <h4>Jenny</h4>
+        </center>
+      </div>
+      <div class="col-12" style="margin-top: 7rem !important">
+        <center>
+          <a href="#" class="text-decoration-none" onclick="startTextChat();">I don't want to use an Avatar. I want to
+            have a text chat.</a>
+        </center>
       </div>
     </div>
-    <div id="chat" class="container-fluid">
-      <!-- <div style="margin-top: -20px">
+  </div>
+  <div id="chat" class="container-fluid">
+    <!-- <div style="margin-top: -20px">
         <button
           id="launch-course"
           class="btn btn-primary float-sm-end"
@@ -166,100 +188,60 @@
           Launch eLearning course
         </button>
       </div> -->
-      <div
-        class="answers"
-        style="height: calc(100vh - 210px); overflow-y: auto"
-      ></div>
-      <div class="row message">
-        <div class="col-md-10">
-          <textarea
-            id="question"
-            rows="2"
-            placeholder="Send a message."
-            class="form-control"
-          ></textarea>
-        </div>
-        <div class="col-md-1 mt-2">
-          <button
-            id="send-button"
-            class="btn btn-primary w-100"
-            onclick="sendMessage();"
-          >
-            Send
-          </button>
-        </div>
-        <div class="col-md-1 mt-2">
-          <button
-            id="refresh-button"
-            class="btn btn-secondary w-100"
-            onclick="resetChat()"
-          >
-            Reset
-          </button>
-          <div class="dot-flashing mt-3" style="background-color: white"></div>
-        </div>
+    <div class="answers" style="height: calc(100vh - 210px); overflow-y: auto"></div>
+    <div class="row message">
+      <div class="col-md-10">
+        <textarea id="question" rows="2" placeholder="Send a message." class="form-control"></textarea>
+      </div>
+      <div class="col-md-1 mt-2">
+        <button id="send-button" class="btn btn-primary w-100" onclick="sendMessage();">
+          Send
+        </button>
+      </div>
+      <div class="col-md-1 mt-2">
+        <button id="refresh-button" class="btn btn-secondary w-100" onclick="resetChat()">
+          Reset
+        </button>
+        <div class="dot-flashing mt-3" style="background-color: white"></div>
       </div>
     </div>
+  </div>
 
-    <div id="chat-video" class="container-fluid">
-      <div class="row">
-        <div class="col-5" id="chat-video-text-section">
-          <div
-            class="answers-video"
-            style="height: calc(100vh - 210px); overflow-y: auto"
-          ></div>
-          <div class="row message">
-            <div class="col-6" id="section-question-video">
-              <textarea
-                id="question-video"
-                rows="2"
-                placeholder="Send a message."
-                class="form-control"
-              ></textarea>
-            </div>
-            <div id="message-video-section" class="col-3 mt-2">
-              <button
-                id="send-button"
-                class="btn btn-primary w-100"
-                onclick="sendMessageVideo();"
-              >
-                Send
-              </button>
-            </div>
-            <div class="col-3 mt-2">
-              <button
-                id="refresh-button"
-                class="btn btn-secondary w-100"
-                onclick="resetChatVideo()"
-              >
-                Reset
-              </button>
-              <div
-                class="dot-flashing mt-3"
-                style="background-color: white"
-              ></div>
-            </div>
+  <div id="chat-video" class="container-fluid">
+    <div class="row">
+      <div class="col-5" id="chat-video-text-section">
+        <div class="answers-video" style="height: calc(100vh - 210px); overflow-y: auto"></div>
+        <div class="row message">
+          <div class="col-6" id="section-question-video">
+            <textarea id="question-video" rows="2" placeholder="Send a message." class="form-control"></textarea>
+          </div>
+          <div id="message-video-section" class="col-3 mt-2">
+            <button id="send-button" class="btn btn-primary w-100" onclick="sendMessageVideo();">
+              Send
+            </button>
+          </div>
+          <div class="col-3 mt-2">
+            <button id="refresh-button" class="btn btn-secondary w-100" onclick="resetChatVideo()">
+              Reset
+            </button>
+            <div class="dot-flashing mt-3" style="background-color: white"></div>
           </div>
         </div>
+      </div>
 
-        <div class="col-12 text-center avatar-section">
-          <div class="container-chatgpt-video">
-            <!-- <video autoplay id="gptvideo" width="100%" height="300">
+      <div class="col-12 text-center avatar-section">
+        <div class="container-chatgpt-video">
+          <!-- <video autoplay id="gptvideo" width="100%" height="300">
               <source id="videosource" src="" type="video/mp4" />
             </video> -->
-            <!-- added "id=video-wrapper" -->
-            <div id="video-wrapper">
-              <div>
-                <video
-                  id="talk-video"
-                  width="400"
-                  height="400"
-                  autoplay
-                ></video>
-              </div>
+          <!-- added "id=video-wrapper" -->
+          <div id="video-wrapper">
+            <div>
+              <video id="talk-video" width="400" height="400" autoplay></video>
             </div>
+          </div>
 
-            <!-- <div id="status" style="color: black">
+          <!-- <div id="status" style="color: black">
               ICE gathering status:
               <label id="ice-gathering-status-label"></label><br />
               ICE status: <label id="ice-status-label"></label><br />
@@ -271,41 +253,23 @@
               ><br />
               <input id="talk-text" type="text" value="" />
             </div> -->
-          </div>
-          <div class="mt-3">
-            <button
-              id="start-recording"
-              class="btn btn-primary"
-              onclick="startRecordChat()"
-            >
-              Start Recording
-            </button>
-            <button
-              id="stop-recording"
-              class="btn btn-primary"
-              onclick="stopRecordChat()"
-              disabled
-            >
-              Stop Recording
-            </button>
+        </div>
+        <div class="mt-3">
+          <button id="start-recording" class="btn btn-primary" onclick="startRecordChat()">
+            Start Recording
+          </button>
+          <button id="stop-recording" class="btn btn-primary" onclick="stopRecordChat()" disabled>
+            Stop Recording
+          </button>
 
-            <div class="mb-1">
-              <audio
-                style="display: none"
-                id="audioPlayerChat"
-                controls
-                preload="none"
-              ></audio>
-            </div>
-            <br />
-            <button
-              id="hide-button"
-              class="btn btn-secondary"
-              onclick="showHideChat();"
-            >
-              Toggle Chat
-            </button>
-            <!-- <br />
+          <div class="mb-1">
+            <audio style="display: none" id="audioPlayerChat" controls preload="none"></audio>
+          </div>
+          <br />
+          <button id="hide-button" class="btn btn-secondary" onclick="showHideChat();">
+            Toggle Chat
+          </button>
+          <!-- <br />
             <br />
             <button
               id="end-session-button"
@@ -314,187 +278,126 @@
             >
               End Session
             </button> -->
-          </div>
         </div>
       </div>
     </div>
+  </div>
 
-    <div id="knowledge_source" class="row container-fluid">
-      <div
-        class="answer_ks"
-        style="height: calc(100vh - 210px); overflow-y: auto"
-      ></div>
-      <div class="row message_ks">
-        <div class="col-md-11">
-          <textarea
-            id="question_ks"
-            rows="2"
-            placeholder="Send a message."
-            class="form-control"
-          ></textarea>
-        </div>
-        <div class="col-md-1 mt-2">
-          <button
-            id="send-button"
-            class="send-button-ks btn btn-primary w-100"
-            onclick="sendMessageKS();"
-          >
-            Send
-          </button>
-          <div class="dot-flashing mt-3" style="background-color: white"></div>
-        </div>
+  <div id="knowledge_source" class="row container-fluid">
+    <div class="answer_ks" style="height: calc(100vh - 210px); overflow-y: auto"></div>
+    <div class="row message_ks">
+      <div class="col-md-11">
+        <textarea id="question_ks" rows="2" placeholder="Send a message." class="form-control"></textarea>
+      </div>
+      <div class="col-md-1 mt-2">
+        <button id="send-button" class="send-button-ks btn btn-primary w-100" onclick="sendMessageKS();">
+          Send
+        </button>
+        <div class="dot-flashing mt-3" style="background-color: white"></div>
       </div>
     </div>
-    <div id="train-model" class="container-fluid">
-      <h1 class="h3 mb-3 fw-normal">Wisdom Weaver</h1>
-      <h1 class="h4 mb-3 fw-normal">Ingest Information</h1>
-      <div class="row">
-        <div class="col-md-12 fw-normal mb-2">
-          How would you like to ingest information?
-        </div>
-        <div class="col-md-12">
-          <select class="form-select" onchange="typeChanged(this)">
-            <option value="1">Text</option>
-            <!-- <option value="2">PDF</option> -->
-            <!-- <option value="3">Audio</option> -->
-          </select>
-        </div>
-        <div class="col-md-12 mt-2">
-          <textarea
-            id="model-text"
-            rows="10"
-            placeholder="Copy paste text to be trained here."
-            class="form-control"
-          ></textarea>
-          <input
-            id="model-text-source"
-            type="text"
-            class="form-control col-6"
-            placeholder="Enter source without spaces"
-          />
-          <input
-            id="model-pdf"
-            type="text"
-            class="form-control col-6"
-            placeholder="Enter pdf online link here"
-          />
-          <div id="model-audio" class="text-center mt-2">
-            <button class="btn btn-primary" onclick="startRecording()">
-              Start Recording
-            </button>
-            <button class="btn btn-primary" onclick="stopRecording()" disabled>
-              Stop Recording
-            </button>
-            <div class="mt-2 mb-1">
-              <audio id="audioPlayer" controls preload="none"></audio>
-            </div>
-            <!-- <button class="btn btn-primary" onclick="uploadFile()">
+  </div>
+  <div id="train-model" class="container-fluid">
+    <h1 class="h3 mb-3 fw-normal">Wisdom Weaver</h1>
+    <h1 class="h4 mb-3 fw-normal">Ingest Information</h1>
+    <div class="row">
+      <div class="col-md-12 fw-normal mb-2">
+        How would you like to ingest information?
+      </div>
+      <div class="col-md-12">
+        <select class="form-select" onchange="typeChanged(this)">
+          <option value="1">Text</option>
+          <!-- <option value="2">PDF</option> -->
+          <!-- <option value="3">Audio</option> -->
+        </select>
+      </div>
+      <div class="col-md-12 mt-2">
+        <textarea id="model-text" rows="10" placeholder="Copy paste text to be trained here."
+          class="form-control"></textarea>
+        <input id="model-text-source" type="text" class="form-control col-6"
+          placeholder="Enter source without spaces" />
+        <input id="model-pdf" type="text" class="form-control col-6" placeholder="Enter pdf online link here" />
+        <div id="model-audio" class="text-center mt-2">
+          <button class="btn btn-primary" onclick="startRecording()">
+            Start Recording
+          </button>
+          <button class="btn btn-primary" onclick="stopRecording()" disabled>
+            Stop Recording
+          </button>
+          <div class="mt-2 mb-1">
+            <audio id="audioPlayer" controls preload="none"></audio>
+          </div>
+          <!-- <button class="btn btn-primary" onclick="uploadFile()">
               Upload File
             </button> -->
-            <button class="btn btn-primary" onclick="transcribe()" disabled>
-              Display Transcription
-            </button>
-            <button class="btn btn-primary" onclick="summarize()" disabled>
-              Display Recording Summary
-            </button>
-            <div class="mt-3">
-              <small>Powerered by BridgeAI</small>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-12 mt-2 text-center main-buttons">
-          <button
-            id="send-button"
-            class="send-btn btn btn-primary text-center"
-            onclick="startTraining();"
-          >
-            Ingest Information
+          <button class="btn btn-primary" onclick="transcribe()" disabled>
+            Display Transcription
           </button>
-          <div class="dot-flashing mt-3" style="background-color: white"></div>
+          <button class="btn btn-primary" onclick="summarize()" disabled>
+            Display Recording Summary
+          </button>
+          <div class="mt-3">
+            <small>Powerered by BridgeAI</small>
+          </div>
         </div>
       </div>
+      <div class="col-md-12 mt-2 text-center main-buttons">
+        <button id="send-button" class="send-btn btn btn-primary text-center" onclick="startTraining();">
+          Ingest Information
+        </button>
+        <div class="dot-flashing mt-3" style="background-color: white"></div>
+      </div>
     </div>
+  </div>
 
-    <footer class="footer mt-auto py-2 bg-body-tertiary">
-      <div class="container">
-        <div></div>
-        <span class="text-body-secondary">
-          <div id="navigation">
-            <!-- <span><span onclick="askQueries();" class="text-decoration-underline text-pointer">Ask queries</span><span> |
+  <footer class="footer mt-auto py-2 bg-body-tertiary">
+    <div class="container">
+      <div></div>
+      <span class="text-body-secondary">
+        <div id="navigation">
+          <!-- <span><span onclick="askQueries();" class="text-decoration-underline text-pointer">Ask queries</span><span> |
             </span></span> -->
-            <span
-              onclick="home();"
-              class="text-decoration-underline text-pointer"
-              >Home</span
-            >
-            <span> | </span>
-            <span class="adminrole"
-              ><span
-                onclick="trainModel();"
-                class="text-decoration-underline text-pointer"
-                >Ingest Information</span
-              ><span> | </span></span
-            >
-            <span
-              onclick="logout();"
-              class="text-decoration-underline text-pointer"
-              >Log out</span
-            >
-          </div>
-          All Rights Reserved ©2024.
-          <a href="https://www.innostrat.in/" target="_blank"
-            >Innostrat Technologies Pvt. Ltd.</a
-          >
-        </span>
-      </div>
-    </footer>
-    <div
-      id="modalText"
-      class="modal fade bd-example-modal-lg"
-      tabindex="-1"
-      role="dialog"
-      aria-labelledby="myLargeModalLabel"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog modal-lg">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title"></h5>
-            <button
-              type="button"
-              class="close btn btn-primary"
-              data-dismiss="modal"
-              aria-label="Close"
-              onclick="closeModal()"
-            >
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
-          <div class="modal-body" style="height: 70vh; overflow-y: auto">
-            <p id="modal-data"></p>
-          </div>
-          <div class="modal-footer">
-            <button
-              type="button"
-              class="btn btn-secondary"
-              data-dismiss="modal"
-              onclick="closeModal()"
-            >
-              Close
-            </button>
-          </div>
+          <span onclick="home();" class="text-decoration-underline text-pointer">Home</span>
+          <span> | </span>
+          <span class="adminrole"><span onclick="trainModel();" class="text-decoration-underline text-pointer">Ingest
+              Information</span><span> | </span></span>
+          <span onclick="logout();" class="text-decoration-underline text-pointer">Log out</span>
+        </div>
+        All Rights Reserved ©2024.
+        <a href="https://www.innostrat.in/" target="_blank">Innostrat Technologies Pvt. Ltd.</a>
+      </span>
+    </div>
+  </footer>
+  <div id="modalText" class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog"
+    aria-labelledby="myLargeModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title"></h5>
+          <button type="button" class="close btn btn-primary" data-dismiss="modal" aria-label="Close"
+            onclick="closeModal()">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body" style="height: 70vh; overflow-y: auto">
+          <p id="modal-data"></p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal" onclick="closeModal()">
+            Close
+          </button>
         </div>
       </div>
     </div>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
-      crossorigin="anonymous"
-    ></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
-    <script src="https://malsup.github.io/jquery.blockUI.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/lamejs/1.2.1/lame.min.js"></script>
-    <script src="js/site.js?v=2"></script>
-    <script src="js/streaming-client-api.js?v=2"></script>
-  </body>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+    crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <script src="https://malsup.github.io/jquery.blockUI.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lamejs/1.2.1/lame.min.js"></script>
+  <script src="js/site.js?v=2"></script>
+  <script src="js/streaming-client-api.js?v=2"></script>
+</body>
+
 </html>
