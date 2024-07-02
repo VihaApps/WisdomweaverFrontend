@@ -59,16 +59,17 @@
             </p>
             <div class="row" style="margin-top: 20px">
               <span>
-                <i class="fa fa-arrow-right bgcolor-change" style="font-size: 48px; float: left; padding: 5px"
-                  onclick="landing_page_click()"></i>
+                <!-- <i class="fa fa-arrow-right bgcolor-change" style="font-size: 48px; float: left; padding: 5px"
+                  onclick="landing_page_click()"></i> -->
+                  <img src="/images/RightArrow.png" alt="" style="font-size: 48px; float: left; padding: 5px" onclick="landing_page_click()">
               </span>
             </div>
           </div>
         </div>
       </div>
       <div class="col-lg-5">
-        <div class="row">
-          <div class="col-lg-3">
+        <div class="row" style="justify-items: center;">
+          <div class="col-lg-12">
             <img src="/images/Background.png" class="backgroundimg" style="width: 42%;" />
           </div>
         </div>
@@ -76,8 +77,8 @@
           <div class="col-lg-6 usecaseResources">
             <!-- Dropdwon -->
             <div class="dropdown mt-3">
-              <button class="btn btn-secondary dropdown-toggle" type="button" id="useCasesDropdown"
-                data-bs-toggle="dropdown" aria-expanded="false">
+              <button class="btn btn-secondaryy dropdown-toggle" type="button" id="useCasesDropdown"
+                data-bs-toggle="dropdown" aria-expanded="false" style="color: white;">
                 Use Cases
               </button>
               <ul class="dropdown-menu" aria-labelledby="useCasesDropdown">
@@ -89,8 +90,8 @@
 
             <!-- Resources Dropdown -->
             <div class="dropdown mt-3">
-              <button class="btn btn-secondary dropdown-toggle" type="button" id="resourcesDropdown"
-                data-bs-toggle="dropdown" aria-expanded="false">
+              <button class="btn btn-secondaryy dropdown-toggle" type="button" id="resourcesDropdown"
+                data-bs-toggle="dropdown" aria-expanded="false" style="color: white;">
                 Resources
               </button>
               <ul class="dropdown-menu" aria-labelledby="resourcesDropdown">
@@ -100,15 +101,39 @@
               </ul>
             </div>
           </div>
-          <div class="col-lg-6 loginRegister">
+          <div class="col-lg-6 loginRegister ">
             <!-- Login-Register -->
-            <button class="btn btn-primary" onclick="signIn();">Login</button>
-            <button class="btn btn-secondary" onclick="register();">Sign Up</button>
+            <!-- <button class="btn btn-primary" onclick="signIn();">Login</button> -->
+            <a href="login" onclick="signIn();" class="alink1 mt-2">Login</a>
+            <button class="btnSignup">
+              <a href="register" onclick="register();" class="alink2">Sign Up</a>
+            </button>
+            <!-- <button class="btn btn-secondary" onclick="register();">Sign Up</button> -->
           </div>
-
+          <div class="boximg ">
+            <div class="content">
+              <h1 class="step">Steps</h1>
+            </div>
+            <ul style="list-style-type: none;">
+              <li class="text1 mt-5   d-flex align-items-center"><img src="./images/Group (1).png" alt="" class="imgs">
+                <span class="textt">Duis aute irure dolor in reprehenderit in voluptate
+                  velit esse cillum dolore eu</span></li>
+              <li class="text1 mt-5   d-flex align-items-center"><img src="./images/Group (3).png" alt="" class="imgs">
+                <span class="textt">fugiat nulla pariatur. Excepteur sint occaecat
+                cupidatat non proident </span></li>
+              <li class="text1 mt-5   d-flex align-items-center"  ><img src="./images/Group (4).png" alt="" class="imgs">
+                <span class="textt">Duis aute irure dolor in reprehenderit in voluptate
+                velit esse cillum dolore eu</span>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>
+  </div>
+  </div>
+  </div>
+  </div>
   </div>
   <div id="options_page" class="container">
     <div class="row">

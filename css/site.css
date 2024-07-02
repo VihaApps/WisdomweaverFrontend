@@ -11,31 +11,178 @@ body {
   background-color: rgb(239 242 244);
   overflow: hidden;
 }
+
 /* Jay Css */
-.loginuser{
+.loginuser {
   margin-top: 40px;
 }
-.backgroundimg{
+
+.backgroundimg {
+  z-index: -1;
   position: absolute
 }
 
-.usecaseResources{
+.boximg {
+  width: 110%;
+  height: 80%;
+}
+
+
+.bottom-right {
+  position: absolute;
+  bottom: 8px;
+  right: 16px;
+}
+
+.usecaseResources {
   padding-left: 250px;
   display: flex;
   justify-content: space-evenly;
   /* margin-left: 150px; */
   gap: 0.5rem;
+  align-items: center;
+  justify-content: center;
 }
 
-.loginRegister{
-  padding-left: 250px;
+.loginRegister {
+  padding-left: 200px;
   display: flex;
-  justify-content: space-evenly;
-  height: 25%;
+  gap: 1rem;
+  height: 100%;
   margin-top: auto;
+  color: aliceblue;
+  align-items: center;
+  justify-content: center;
+}
+
+.alink1 {
+  color: rgb(255, 255, 255) !important;
+  font-weight: 500 !important;
+  margin-bottom: 8px;
+  text-decoration: none;
+
+}
+
+.alink2 {
+  color: rgb(0, 0, 0) !important;
+  font-weight: 500 !important;
+  margin-bottom: 8px;
+  text-decoration: none;
+  background-color: #ffffff;
+}
+
+.btnSignup {
+  border-radius: 8px;
+  border-color: none !important;
+  box-shadow: none;
+  text-shadow: none;
+  border: none;
+
+}
+
+.btn-secondaryy {
+  --bs-btn-bg: initial;
+  /* Reset to initial value (or specify your desired color) */
+  --bs-btn-border-color: initial;
+
+}
+
+.boximg {
+  width: 100%;
+  
+  position: relative;
+  background-image: url(/images/box.png);
+  background-repeat: no-repeat;
+  height: 665px;
+  background-size: cover;
+  box-sizing: border-box;
+}
+
+.container .content {
+  position: absolute;
+  
+  color: #000000;
+ 
+  margin-left: 190px;
+  top: 20%;
+}
+
+.step{
+  margin-left: 80px;
+  padding-top: 150px;
+}
+
+.imgs{
+  width: 50px;
+  margin-left: 50px;
+  margin-right: 10px;
+}
+
+.imgs .text1 {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.textt{
+  font-style: normal;
+  font-size: 22px;
+  font-weight: 400;
+  /* font-size: 16px; Example font size */
+  font-weight: 400; /* Example font weight */
+  /* white-space: pre-wrap; */
+  text-align: justify;
+  flex: 1;
 }
 
 
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .boximg {
+    height: auto; /* Allow the height to adjust based on content */
+  }
+
+  .step {
+    font-size: 1.5rem;
+  }
+
+  .imgs {
+    width: 40px;
+  }
+
+  .textt {
+    font-size: 0.875rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .boximg {
+    padding: 10px; /* Reduce padding for smaller screens */
+  }
+
+  .text1 {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .imgs {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+
+  .step {
+    font-size: 1.25rem; /* Adjust the font size for very small screens */
+  }
+
+  .textt {
+    font-size: 0.75rem; /* Adjust text size for very small screens */
+  }
+}
 /* End */
 
 .form-signin {
@@ -58,6 +205,7 @@ body {
   border-top-left-radius: 0;
   border-top-right-radius: 0;
 }
+
 .container {
   width: auto;
   max-width: 680px;
@@ -73,9 +221,11 @@ footer {
   text-align: center;
   font-size: 12px;
 }
+
 .blockUI h1 {
   font-size: 1.5rem;
 }
+
 .message {
   position: fixed;
   bottom: 0;
@@ -84,6 +234,7 @@ footer {
   text-align: center;
   margin-bottom: 70px;
 }
+
 .messageKS {
   position: fixed;
   bottom: 0;
@@ -92,14 +243,17 @@ footer {
   text-align: center;
   margin-bottom: 70px;
 }
+
 .user-avatar {
   width: 30px;
   float: left;
   margin-top: 5px;
 }
+
 .text {
   margin-left: 45px;
 }
+
 .container-user {
   padding: 10px;
   clear: both;
@@ -113,11 +267,13 @@ footer {
   background-color: rgba(68, 70, 84, 1);
   color: rgba(236, 236, 241, 1);
 }
+
 .container-chatgpt-video {
   padding: 10px;
   clear: both;
   color: rgba(236, 236, 241, 1);
 }
+
 .color-white {
   color: rgba(236, 236, 241, 1);
 }
@@ -131,6 +287,7 @@ footer {
 .btn-primary {
   background-color: rgb(18 151 228/1) !important;
 }
+
 textarea {
   background-color: transparent !important;
   color: black !important;
@@ -143,6 +300,7 @@ textarea::placeholder {
 textarea:focus {
   /* outline: none !important; */
 }
+
 .form-control:focus {
   border-color: black;
   box-shadow: 0 0 0 0.25rem rgba(236, 236, 241, 0.05);
@@ -151,28 +309,35 @@ textarea:focus {
 ::-webkit-scrollbar {
   width: 10px;
 }
+
 ::-webkit-scrollbar-button {
   /* 2 */
 }
+
 ::-webkit-scrollbar-track {
   width: 4px;
   background: #888b9c;
 }
+
 ::-webkit-scrollbar-track-piece {
   /* 4 */
 }
+
 ::-webkit-scrollbar-thumb {
   background: silver;
   width: 2px;
   /* border: 2px solid rgba(68, 70, 84, 1); */
   border: 2px solid silver;
 }
+
 ::-webkit-scrollbar-corner {
   /* 6 */
 }
+
 ::-webkit-resizer {
   /* 7 */
 }
+
 .text-pointer {
   cursor: pointer;
 }
@@ -201,18 +366,32 @@ a {
 .box-min-height {
   min-height: 230px;
 }
+
 .card-title-box {
   padding-top: 80px;
   text-align: center;
 }
+
 .img-avatar {
   padding: 20px;
   cursor: pointer;
 }
+
 #talk-video {
   border-radius: 50%;
 }
 
 i.fa.fa-arrow-right.bgcolor-change {
   cursor: pointer;
+}
+
+.img1 {
+  display: flex;
+  align-items: center;
+  /* Align items vertically */
+}
+
+.img1 img {
+  margin-right: 20px;
+  /* Adjust the margin as needed */
 }
