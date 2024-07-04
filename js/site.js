@@ -137,7 +137,6 @@ function signIn() {
         $("#navigation").show();
         $("#landing_page").show();
         $("#login").hide();
-
         initialize();
       }
     },
