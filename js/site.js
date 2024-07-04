@@ -80,8 +80,11 @@ $(document).ready(function () {
   //signIn();
 
   //Use this for development
+  $("#login").hide();
   $("#landing_page").hide();
   $("#chat").show();
+  // $("#chat-video").show();
+  // playIdleVideo();
 });
 
 function getToken() {
@@ -206,8 +209,9 @@ async function choose_avatar_page_click(gender) {
   $("#choose_avatar").hide();
   $("#stop-recording").hide();
   $.blockUI();
-  await connect();
-  await initChat();
+  // await connect();
+  // await initChat();
+  playIdleVideo();
   $.unblockUI();
 }
 
@@ -249,10 +253,6 @@ function home() {
   $("#knowledge_source").hide();
   resetChat();
   resetChatVideo();
-
-  //  Just for testing the feature
-  $("#landing_page").hide();
-  $("#chat").show();
 }
 
 function trainModel() {
