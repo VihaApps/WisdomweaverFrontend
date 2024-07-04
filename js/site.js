@@ -78,6 +78,10 @@ $(document).ready(function () {
     }
   });
   //signIn();
+
+  //Use this for development
+  $("#landing_page").hide();
+  $("#chat").show();
 });
 
 function getToken() {
@@ -245,6 +249,10 @@ function home() {
   $("#knowledge_source").hide();
   resetChat();
   resetChatVideo();
+
+  //  Just for testing the feature
+  $("#landing_page").hide();
+  $("#chat").show();
 }
 
 function trainModel() {
