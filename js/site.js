@@ -278,9 +278,9 @@ function sendMessage() {
     sessionId: uniqueSessionId,
     chatType: chatType,
   };
-  const questionHtml = `<div class="container-user">
-          <img src="images/avatar.png" alt="Avatar" class="user-avatar" />
-          <p class="pt-2 text">${$("#question").val()}</p>
+  const questionHtml = `<div class="container-user custom-container-user" >
+          <img src="images/avatar3.png" alt="Avatar" class="user-avatar" />
+          <p class="pt-2 texxtt">${$("#question").val()}</p>
         </div>`;
   $(".answers").append(questionHtml);
   $(".answers").animate({ scrollTop: $(".answers")[0].scrollHeight }, 1000);

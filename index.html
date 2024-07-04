@@ -58,7 +58,7 @@
         <span class="terms">
           <p>By continuing, you agree to the <u>Terms of use</u> and <u>Privacy Policy</u></p>
         </span>
-        <button type="submit" onclick="signIn();" class="btn btn">Login</button>
+        <button type="submit" onclick="signIn();" class="btn btnnn">Login</button>
 
         <div class="forgot">
           <h6><u> Forget your password</u></h6>
@@ -441,9 +441,9 @@
 
   <!----------------------------End Of Page 3-------------------->
 
-<!------------------------------------------- START PAGE 4 ------------------------>
+  <!------------------------------------------- START PAGE 4 ------------------------>
 
-  <div id="chat" class="container-fluid">
+  <div id="chat" class="container-fluid" >
     <!-- <div style="margin-top: -20px">
         <button
           id="launch-course"
@@ -455,35 +455,53 @@
         </button>
       </div> -->
 
-    
+
     <div class="container">
       <div class="mytexttbox">
+        <div class="row">
+
+          <span class="para11">
+            <h1 class=" h1111">
+              Text Based<b class="bb"> Convo</b></h1>
+          </span>
+
+        </div>
+        <div row="" style="height: 200px;" class="answers">
+                <!-- Chet Box -->
+        </div>
+          <div class=" container">
+            <div class="row minichet">
+              <textarea id="question" rows="2" placeholder="Send a message." class="form-control"></textarea>
+            </div>
+          </div>
+          <button class="butto0nn" id="send-button" onclick="sendMessage();">Send</button>
+          <button class="butto0n" id="refresh-button" onclick="resetChat();">Rest</button>
         
+      </div>   
+   </div>
+  </div>
+  <!--------------------------------------------------------------- END OF PAGE 4 --------------------------------->
 
-        <h1>helloo</h1>
-
-      </div>
+  <!-- <div class="answers" style="height: calc(100vh - 210px); overflow-y: auto"></div>
+  <div class="row message">
+    <div class="col-md-10">
+      <textarea id="question" rows="2" placeholder="Send a message." class="form-control"></textarea>
     </div>
-    <!--------------------------------------------------------------- END OF PAGE 4 --------------------------------->
 
-    <div class="answers" style="height: calc(100vh - 210px); overflow-y: auto"></div>
-    <div class="row message">
-      <div class="col-md-10">
-        <textarea id="question" rows="2" placeholder="Send a message." class="form-control"></textarea>
-      </div>
-      <div class="col-md-1 mt-2">
-        <button id="send-button" class="btn btn-primary w-100" onclick="sendMessage();">
-          Send
-        </button>
-      </div>
-      <div class="col-md-1 mt-2">
-        <button id="refresh-button" class="btn btn-secondary w-100" onclick="resetChat()">
-          Reset
-        </button>
-        <div class="dot-flashing mt-3" style="background-color: white"></div>
-      </div>
+    <div class="col-md-1 mt-2">
+      <button id="send-button" class="btn btn-primary w-100" onclick="sendMessage();">
+        Send
+      </button>
+    </div>
+
+    <div class="col-md-1 mt-2">
+      <button id="refresh-button" class="btn btn-secondary w-100" onclick="resetChat()">
+        Reset
+      </button>
+      <div class="dot-flashing mt-3" style="background-color: white"></div>
     </div>
   </div>
+  </div> -->
 
   <div id="chat-video" class="container-fluid">
     <div class="row">
