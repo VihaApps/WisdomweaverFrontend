@@ -617,10 +617,12 @@ body {
 }
 
 .para11 {
-  border-radius: 2%;
-
-  background-color:#ebe4e43d ;
-  width: 100%;
+  border-top-right-radius: 20%;
+  margin-left: 25px;
+  border-top-left-radius: 19%;
+  /* border-radius: 3%; */
+  background-color: #ebe4e43d;
+  width: 93%;
   color: #838282;
   margin-bottom: 2px;
 }
@@ -690,15 +692,63 @@ textarea.form-control {
   height: 100%;
   width: 8% !important;
   float: left;
+  position: relative;
+  font-size: 11px;
+  line-height: 1.4;
+   flex: 1 1 auto;  overflow: hidden;
 }
 .texxtt {
-  margin-left: 100px;
-}
+  margin-top: 0px;
+  margin-left: 80px;
+  /* margin-left: 90px; */
+    background-color: rgba(128, 128, 128, 0.199);
+    border-radius: 10px 10px 10px 0px;
+    width:min-content;
+    height: fit-content;
+   
+
+  }
+
 .custom-container-user{
   padding: 20px;
   /* clear: both; */
-  background-color: rgb(202, 202, 202) !important;
+  /* background-color: rgb(202, 202, 202) !important; */
+  background-color: none!;
   color: rgb(3 3 5) !important;
+  display: inline;
+}
+
+.texxxttt {
+  margin-top: 0px;
+  margin-left: 80px;
+  /* margin-left: 90px; */
+    background-color: #0379DB;
+    border-radius: 10px 10px 0px 10px;
+    width:min-content;
+    height: fit-content;
+   
+
+  }
+.custom-container-userrr{
+  padding: 20px;
+  /* clear: both; */
+  /* background-color: rgb(202, 202, 202) !important; */
+  background-color: none!;
+  color: rgb(3 3 5) !important; 
+   float: right !important;margin-right: 30px;
+   display: inline;
+
+
+}
+.userr-avatarr{
+  height: 100%;
+  width: 8% !important;
+  float: right !important;
+  position: relative;
+  font-size: 11px;
+  line-height: 1.4;
+   flex: 1 1 auto;  
+   overflow: hidden;
 }
 /* -----------------------END START CONVO PAGE CSS-------------------------------- */
 
@@ -781,14 +831,14 @@ footer {
 .container-user {
   padding: 10px;
   clear: both;
-  background-color: rgba(52, 53, 65, 1);
+  /* background-color: rgba(52, 53, 65, 1); */
   color: rgba(236, 236, 241, 1);
 }
 
 .container-chatgpt {
   padding: 10px;
   clear: both;
-  background-color: rgba(68, 70, 84, 1);
+  /* background-color: rgba(68, 70, 84, 1); */
   color: rgba(236, 236, 241, 1);
 }
 

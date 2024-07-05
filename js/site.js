@@ -278,9 +278,9 @@ function sendMessage() {
     sessionId: uniqueSessionId,
     chatType: chatType,
   };
-  const questionHtml = `<div class="container-user custom-container-user" >
+  const questionHtml = `<div class="container-user " >
           <img src="images/avatar3.png" alt="Avatar" class="user-avatar" />
-          <p class="pt-2 texxtt">${$("#question").val()}</p>
+          <p class="pt-2 texxtt custom-container-user">${$("#question").val()}</p>
         </div>`;
   $(".answers").append(questionHtml);
   $(".answers").animate({ scrollTop: $(".answers")[0].scrollHeight }, 1000);
@@ -305,8 +305,8 @@ function sendMessage() {
         uid = Date.now();
         const answerHtml = `
         <div class="container-chatgpt">
-          <img src="images/chatgpt.png" alt="ChatGPT Avatar" class="user-avatar" />
-          <p class="pt-2 text gptanswer${uid}"></p>
+          <img src="images/chatgpt.png" alt="ChatGPT Avatar" class="userr-avatarr" />
+          <p class="pt-2 text gptanswer${uid} texxxttt custom-container-userrr"></p>
         </div>
         `;
         $(".answers").append(answerHtml);
