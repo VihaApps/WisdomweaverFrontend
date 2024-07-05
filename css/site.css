@@ -608,24 +608,34 @@ body {
 
 /* -----------------------START CONVO PAGE CSS-------------------------------- */
 
+
+.para11 {    
+   /* border-top-right-radius: 20%; */
+  margin-left: 25px;
+  /* border-top-left-radius: 19%; */
+  /* border-radius: 3%; */
+  /* background-color: #ebe4e43d; */
+  overflow: hidden;
+  width: 93%;
+  color: #838282;
+  margin-bottom: 2px;
+  background: rgb(253 253 253);
+  padding: 10px 10px 10px 50px;
+  flex:1 1 45px;
+
+}
 .mytexttbox {
-  background-color: white;
+  background-color: rgb(218 216 216 / 36%);
   width: 100%;
   height: 90%;
   border-radius: 10%;
   margin-top: 80px;
+  overflow: hidden;
+  /* display: flex; */
+    justify-content: space-between;
+    flex-direction: column;
 }
 
-.para11 {
-  border-top-right-radius: 20%;
-  margin-left: 25px;
-  border-top-left-radius: 19%;
-  /* border-radius: 3%; */
-  background-color: #ebe4e43d;
-  width: 93%;
-  color: #838282;
-  margin-bottom: 2px;
-}
 
 .h1111 {
   margin-top: 45px;
@@ -699,13 +709,19 @@ textarea.form-control {
 }
 .texxtt {
   margin-top: 0px;
-  margin-left: 80px;
+  margin-left: 20px;
   /* margin-left: 90px; */
     background-color: rgba(128, 128, 128, 0.199);
     border-radius: 10px 10px 10px 0px;
-    width:min-content;
+    width:fit-content;
+    max-width: 80%;
+    word-wrap: break-word;
     height: fit-content;
-   
+    word-break: break-all;
+    position: relative;
+    padding: 10px; 
+    
+
 
   }
 
@@ -749,6 +765,49 @@ textarea.form-control {
   line-height: 1.4;
    flex: 1 1 auto;  
    overflow: hidden;
+}
+
+/* Media Queries for responsiveness */
+@media (max-width: 768px) {
+    .minichet, .butto0nn, .butto0n, .texxtt, .texxxttt {
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .mytexttbox {
+        margin-top: 50px;
+        height: auto;
+    }
+
+    .user-avatar, .userr-avatarr {
+        width: 12%;
+    }
+}
+
+@media (max-width: 576px) {
+    .h1111 {
+        margin-top: 20px;
+        margin-bottom: 40px;
+    }
+
+    .para11 {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .texxtt, .texxxttt {
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .butto0nn, .butto0n {
+        width: 100%;
+        padding: 10px;
+        margin-left: 0;
+        margin-right: 0;
+    }
 }
 /* -----------------------END START CONVO PAGE CSS-------------------------------- */
 

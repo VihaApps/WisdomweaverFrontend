@@ -280,7 +280,7 @@ function sendMessage() {
   };
   const questionHtml = `<div class="container-user " >
           <img src="images/avatar3.png" alt="Avatar" class="user-avatar" />
-          <p class="pt-2 texxtt custom-container-user">${$("#question").val()}</p>
+          <div class="pt-2 texxtt custom-container-user" >${$("#question").val() }</div>
         </div>`;
   $(".answers").append(questionHtml);
   $(".answers").animate({ scrollTop: $(".answers")[0].scrollHeight }, 1000);
