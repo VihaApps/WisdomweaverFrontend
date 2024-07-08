@@ -511,6 +511,7 @@ body {
   width: 100%;
 }
 
+
 .form-control {
   display: block;
   width: 200%;
@@ -609,47 +610,44 @@ body {
 /* -----------------------START CONVO PAGE CSS-------------------------------- */
 
 
-.para11 {    
-   /* border-top-right-radius: 20%; */
-  margin-left: 25px;
-  /* border-top-left-radius: 19%; */
-  /* border-radius: 3%; */
-  /* background-color: #ebe4e43d; */
-  overflow: hidden;
-  width: 93%;
-  color: #838282;
-  margin-bottom: 2px;
-  background: rgb(253 253 253);
-  padding: 10px 10px 10px 50px;
-  flex:1 1 45px;
 
-}
 .mytexttbox {
-  background-color: rgb(218 216 216 / 36%);
+  background-color: #FFFFFF;
   width: 100%;
   height: 90%;
-  border-radius: 10%;
+  border-radius: 5%;
   margin-top: 80px;
   overflow: hidden;
   /* display: flex; */
     justify-content: space-between;
     flex-direction: column;
 }
-
+.para11{
+  
+  color: #BFC0C1; 
+  align-items: center;
+}
 
 .h1111 {
+  /* background: fixed; */
+  /* box-shadow: 2px 5px #bdbdbd17; */
+  box-shadow: 1px 20px 25px 20px#4e4d4d13;
+  /* background-color: rgb(250, 250, 250);  */
+  height: 84px;
+   border-radius: 2px;
+    width: 100%;
   margin-top: 45px;
   text-align: center;
-  margin-bottom: 80px;
+  /* margin-bottom: 80px; */
 }
 
 .minichet {
-  margin-left: 2px;
-  width: 600px;
+  margin-left: 50px;
+  width: 514px;
   height: 100px;
-  background: #3e3e3e3d;
-  border-radius: 20px 20px;
-  margin-top: 80px;
+  background: #ddddddbe;
+  border-radius: 10px 10px;
+  margin-top: 100px;
 }
 
 textarea.form-control {
@@ -657,10 +655,12 @@ textarea.form-control {
   height: auto;
 }
 .butto0nn {
+  height: 39px;
+  width: 119px;
   background-color: #000000;
   border: none;
   color: white;
-  padding: 15px 32px;
+  /* padding: 10px 50px; */
   text-align: center;
   text-decoration: none;
   display: inline-block;
@@ -668,16 +668,19 @@ textarea.form-control {
   margin: 4px 2px;
   cursor: pointer;
   margin-top: 40px;
-  margin-bottom: 50px;
+  margin-bottom: 70px;
   margin-left:80px ;
   border-radius: 50px;
   font-size: large;
 
 }
 .butto0n {
+
+  height: 39px;
+  width: 100px;
   background-color: white;
   color: black;
-  padding: 15px 32px;
+  /* padding: 10px 50px; */
   text-align: center;
   text-decoration: none;
   display: inline-block;
@@ -685,8 +688,8 @@ textarea.form-control {
   margin: 4px 2px;
   cursor: pointer;
   margin-top: 40px;
-  margin-bottom: 50px;
-  margin-left:80px ;
+  margin-bottom: 70px;
+  margin-left:30px ;
   border-radius: 50px;
   border-color: #000000;
   font-size: large;
@@ -700,30 +703,25 @@ textarea.form-control {
 
 .user-avatar{
   height: 100%;
-  width: 8% !important;
+  width: 10% !important;
   float: left;
-  position: relative;
-  font-size: 11px;
-  line-height: 1.4;
-   flex: 1 1 auto;  overflow: hidden;
+  
+    margin-right: 20px;
 }
 .texxtt {
-  margin-top: 0px;
-  margin-left: 20px;
+    margin-top: 0px;
+    margin-left: 20px;
   /* margin-left: 90px; */
     background-color: rgba(128, 128, 128, 0.199);
-    border-radius: 10px 10px 10px 0px;
+    border-radius: 25px 25px 25px 0px;
     width:fit-content;
     max-width: 80%;
     word-wrap: break-word;
-    height: fit-content;
-    word-break: break-all;
-    position: relative;
+    /* height: fit-content; */
+    word-break: break-word;
+    /* position: relative; */
     padding: 10px; 
-    
-
-
-  }
+}
 
 .custom-container-user{
   padding: 20px;
@@ -739,76 +737,93 @@ textarea.form-control {
   margin-left: 80px;
   /* margin-left: 90px; */
     background-color: #0379DB;
-    border-radius: 10px 10px 0px 10px;
-    width:min-content;
+    border-radius: 25px 25px 0px 25px;
+    width:fit-content;
     height: fit-content;
-   
+    word-wrap: break-word;
+    word-break: break-word;
+    padding: 10px; 
 
   }
 .custom-container-userrr{
+  
   padding: 20px;
   /* clear: both; */
   /* background-color: rgb(202, 202, 202) !important; */
   background-color: none!;
-  color: rgb(3 3 5) !important; 
+  color: white ;
    float: right !important;margin-right: 30px;
    display: inline;
 
 
 }
-.userr-avatarr{
-  height: 100%;
-  width: 8% !important;
-  float: right !important;
-  position: relative;
-  font-size: 11px;
-  line-height: 1.4;
-   flex: 1 1 auto;  
-   overflow: hidden;
+
+
+
+
+
+
+@media (max-width: 1200px) {
+  .minichet {
+    width: 500px;
+  }
+  .butto0nn, .butto0n {
+    width: 100px;
+    margin-left: 60px;
+  }
 }
 
-/* Media Queries for responsiveness */
+@media (max-width: 992px) {
+  .minichet {
+    width: 400px;
+  }
+  .butto0nn, .butto0n {
+    width: 90px;
+    margin-left: 50px;
+  }
+}
+
 @media (max-width: 768px) {
-    .minichet, .butto0nn, .butto0n, .texxtt, .texxxttt {
-        width: 100%;
-        margin-left: 0;
-        margin-right: 0;
-    }
-
-    .mytexttbox {
-        margin-top: 50px;
-        height: auto;
-    }
-
-    .user-avatar, .userr-avatarr {
-        width: 12%;
-    }
+  .minichet {
+    width: 300px;
+  }
+  .butto0nn, .butto0n {
+    width: 80px;
+    margin-left: 40px;
+  }
+  .texxtt, .texxxttt {
+    max-width: 70%;
+  }
 }
 
 @media (max-width: 576px) {
-    .h1111 {
-        margin-top: 20px;
-        margin-bottom: 40px;
-    }
-
-    .para11 {
-        width: 100%;
-        margin-left: 0;
-    }
-
-    .texxtt, .texxxttt {
-        width: 100%;
-        margin-left: 0;
-        margin-right: 0;
-    }
-
-    .butto0nn, .butto0n {
-        width: 100%;
-        padding: 10px;
-        margin-left: 0;
-        margin-right: 0;
-    }
+  .mytexttbox {
+    margin-top: 20px;
+    height: auto;
+  }
+  .h1111 {
+    height: auto;
+    margin-top: 20px;
+  }
+  .minichet {
+    width: 100%;
+    margin-top: 20px;
+  }
+  .butto0nn, .butto0n {
+    width: 70px;
+    margin-left: 20px;
+  }
+  .texxtt, .texxxttt {
+    max-width: 60%;
+  }
+  .answers {
+    height: 150px;
+  }
 }
+
+
+
+
 /* -----------------------END START CONVO PAGE CSS-------------------------------- */
 
 
@@ -877,26 +892,40 @@ footer {
   margin-bottom: 70px;
 }
 
-.user-avatar {
+/* .user-avatar {
   width: 30px;
   float: left;
   margin-top: 5px;
-}
+} */
 
 .text {
   margin-left: 45px;
 }
 
 .container-user {
+  width: 100%;
+  display: flex; 
+  align-items: center;
   padding: 10px;
-  clear: both;
+  /* clear: both; */
   /* background-color: rgba(52, 53, 65, 1); */
   color: rgba(236, 236, 241, 1);
 }
 
+.answers {
+  height: 270px; /* Set the height of your chatbox */
+  overflow-y: scroll; /* Enable vertical scrollbar */
+  overflow-x: hidden; /* Enable vertical scrollbar */
+  /* border: 1px solid #ccc; */
+  padding: 10px; /* Optional: Add padding inside the chatbox */
+  
+}
+
 .container-chatgpt {
-  padding: 10px;
-  clear: both;
+  
+  align-items: center;
+  padding: 20px;
+  /* clear: both; */
   /* background-color: rgba(68, 70, 84, 1); */
   color: rgba(236, 236, 241, 1);
 }
@@ -940,37 +969,6 @@ textarea:focus {
   box-shadow: 0 0 0 0.25rem rgba(236, 236, 241, 0.05);
 }
 
-::-webkit-scrollbar {
-  width: 10px;
-}
-
-::-webkit-scrollbar-button {
-  /* 2 */
-}
-
-::-webkit-scrollbar-track {
-  width: 4px;
-  background: #888b9c;
-}
-
-::-webkit-scrollbar-track-piece {
-  /* 4 */
-}
-
-::-webkit-scrollbar-thumb {
-  background: silver;
-  width: 2px;
-  /* border: 2px solid rgba(68, 70, 84, 1); */
-  border: 2px solid silver;
-}
-
-::-webkit-scrollbar-corner {
-  /* 6 */
-}
-
-::-webkit-resizer {
-  /* 7 */
-}
 
 .text-pointer {
   cursor: pointer;
