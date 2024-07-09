@@ -442,7 +442,7 @@
   <!----------------------------End Of Page 3-------------------->
 
   <!------------------------------------------- START PAGE 4 ------------------------>
- <div id="chat" class="container-fluid">
+  <div id="chat" class="container-fluid">
 
     <!-- NAV BAR START---------------------------------------------------------------------------------------------- -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light ">
@@ -505,8 +505,8 @@
 
     <!-- ----------------------- END OF NAV BAR START---------------------------------------------------------------------------------------------- -->
 
-  <div class="container-fluid" >
-    <!-- <div style="margin-top: -20px">
+    <div class="container-fluid">
+      <!-- <div style="margin-top: -20px">
         <button
           id="launch-course"
           class="btn btn-primary float-sm-end"
@@ -518,31 +518,33 @@
       </div> -->
 
 
-    <div class="container">
-      <div class="mytexttbox">
-        <div class="row">
-            <span class="para11" style="color: #BFC0C1; align-items: center;" ><h1 class=" h1111">
-              Text Based<b class="bb"> Convo</b></h1>
-          </span>
+      <div class="container">
+        <div class="mytexttbox">
+          <div class="row">
+            <span class="para11" style="color: #BFC0C1; align-items: center;">
+              <h1 class=" h1111">
+                Text Based<b class="bb"> Convo</b></h1>
+            </span>
 
-        </div>
-        <div  class="answers  " style="height: 280px;" >
-                <!-- Chet Box -->
-        </div>
+          </div>
+          <div class="answers  " style="height: 280px;">
+            <!-- Chet Box -->
+          </div>
           <div class=" container">
             <div class="row minichet">
-              <textarea id="question" rows="2" placeholder="Send a message." class="form-control msgtxt" ></textarea>
+              <textarea id="question" rows="2" placeholder="Send a message." class="form-control msgtxt"></textarea>
             </div>
           </div>
           <button class="butto0nn" id="send-button" onclick="sendMessage();">Send</button>
           <button class="butto0n" id="refresh-button" onclick="resetChat();">Reset</button>
-        
-      </div>   
-   </div>
-  </div>
-  <!--------------------------------------------------------------- END OF PAGE 4 --------------------------------->
 
-  <!-- <div class="answers" style="height: calc(100vh - 210px); overflow-y: auto"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+    <!--------------------------------------------------------------- END OF PAGE 4 --------------------------------->
+
+     <!-- <div class="answers" style="height: calc(100vh - 210px); overflow-y: auto"></div>
   <div class="row message">
     <div class="col-md-10">
       <textarea id="question" rows="2" placeholder="Send a message." class="form-control"></textarea>
@@ -561,10 +563,12 @@
       <div class="dot-flashing mt-3" style="background-color: white"></div>
     </div>
   </div>
-  </div> -->
+  </div>  -->
 
-</div>
-  
+ 
+
+
+  <!------------------------------------------------------------------- START PAGE 5 VIDEO CHAT------------------ -->
   <div id="chat-video" class="container-fluid">
 
     <!-- NAV BAR START---------------------------------------------------------------------------------------------- -->
@@ -573,6 +577,7 @@
         <img src="/images/userlogo.png" alt="" class="src" style="height: 40px;">
       </a>
 
+      
       <div class="dropdown mb-2" style="margin-left: 10px;">
         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownWelcome" role="button" data-bs-toggle="dropdown"
           aria-expanded="false" aria-expanded="false">
@@ -625,9 +630,35 @@
       </button>
       <!-- </div> -->
     </nav>
+    <div class="container-fluid">
 
-    <!-- ----------------------- END OF NAV BAR START---------------------------------------------------------------------------------------------- -->
-    <div class="row">
+      <div class="container">
+
+        <div class="bgback">
+          <div class="mainpara1">
+            <span class="para1">
+              <h1>
+                Lets Begin our <b class="bb"><br>Conversation</br></b></h1>
+            </span>
+
+          </div>
+          <div class="roundimg">
+            <img src="images/Avatar4.png" alt="Avatar">
+          </div>
+          <div class="row" style="justify-content: center;">
+            <button class="but" onclick="startRecordChat()">Start Conversation</button>
+          </div>
+          <div class="row" style="justify-content: center;">
+            <button class=" but1" onclick="showHideChat();">Toggle Chat</button>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+
+
+    <!-- <div class="row">
       <div class="col-5" id="chat-video-text-section">
         <div class="answers-video" style="height: calc(100vh - 210px); overflow-y: auto"></div>
         <div class="row message">
@@ -650,17 +681,17 @@
 
       <div class="col-12 text-center avatar-section">
         <div class="container-chatgpt-video">
-          <!-- <video autoplay id="gptvideo" width="100%" height="300">
+           <video autoplay id="gptvideo" width="100%" height="300">
               <source id="videosource" src="" type="video/mp4" />
             </video> -->
-          <!-- added "id=video-wrapper" -->
-          <div id="video-wrapper">
+    <!-- added "id=video-wrapper" -->
+    <!-- <div id="video-wrapper">
             <div>
               <video id="talk-video" width="400" height="400" autoplay></video>
             </div>
-          </div>
+          </div> -->
 
-          <!-- <div id="status" style="color: black">
+    <!-- <div id="status" style="color: black">
               ICE gathering status:
               <label id="ice-gathering-status-label"></label><br />
               ICE status: <label id="ice-status-label"></label><br />
@@ -672,7 +703,7 @@
               ><br />
               <input id="talk-text" type="text" value="" />
             </div> -->
-        </div>
+    <!-- </div>
         <div class="mt-3">
           <button id="start-recording" class="btn btn-primary" onclick="startRecordChat()">
             Start Recording
@@ -687,8 +718,8 @@
           <br />
           <button id="hide-button" class="btn btn-secondary" onclick="showHideChat();">
             Toggle Chat
-          </button>
-          <!-- <br />
+          </button> -->
+    <!-- <br />
             <br />
             <button
               id="end-session-button"
@@ -697,131 +728,136 @@
             >
               End Session
             </button> -->
+    <!-- </div>
+      </div>
+    </div> 
+  </div> -->
+
+
+    <!------------------------------------------------------------------- END PAGE 5 VIDEO CHAT------------------ -->
+
+    <div id="knowledge_source" class="row container-fluid">
+      <div class="answer_ks" style="height: calc(100vh - 210px); overflow-y: auto"></div>
+      <div class="row message_ks">
+        <div class="col-md-11">
+          <textarea id="question_ks" rows="2" placeholder="Send a message." class="form-control"></textarea>
+        </div>
+        <div class="col-md-1 mt-2">
+          <button id="send-button" class="send-button-ks btn btn-primary w-100" onclick="sendMessageKS();">
+            Send
+          </button>
+          <div class="dot-flashing mt-3" style="background-color: white"></div>
         </div>
       </div>
     </div>
-  </div>
-  <div id="knowledge_source" class="row container-fluid">
-    <div class="answer_ks" style="height: calc(100vh - 210px); overflow-y: auto"></div>
-    <div class="row message_ks">
-      <div class="col-md-11">
-        <textarea id="question_ks" rows="2" placeholder="Send a message." class="form-control"></textarea>
-      </div>
-      <div class="col-md-1 mt-2">
-        <button id="send-button" class="send-button-ks btn btn-primary w-100" onclick="sendMessageKS();">
-          Send
-        </button>
-        <div class="dot-flashing mt-3" style="background-color: white"></div>
-      </div>
-    </div>
-  </div>
-  <div id="train-model" class="container-fluid">
-    <h1 class="h3 mb-3 fw-normal">Wisdom Weaver</h1>
-    <h1 class="h4 mb-3 fw-normal">Ingest Information</h1>
-    <div class="row">
-      <div class="col-md-12 fw-normal mb-2">
-        How would you like to ingest information?
-      </div>
-      <div class="col-md-12">
-        <select class="form-select" onchange="typeChanged(this)">
-          <option value="1">Text</option>
-          <!-- <option value="2">PDF</option> -->
-          <!-- <option value="3">Audio</option> -->
-        </select>
-      </div>
-      <div class="col-md-12 mt-2">
-        <textarea id="model-text" rows="10" placeholder="Copy paste text to be trained here."
-          class="form-control"></textarea>
-        <input id="model-text-source" type="text" class="form-control col-6"
-          placeholder="Enter source without spaces" />
-        <input id="model-pdf" type="text" class="form-control col-6" placeholder="Enter pdf online link here" />
-        <div id="model-audio" class="text-center mt-2">
-          <button class="btn btn-primary" onclick="startRecording()">
-            Start Recording
-          </button>
-          <button class="btn btn-primary" onclick="stopRecording()" disabled>
-            Stop Recording
-          </button>
-          <div class="mt-2 mb-1">
-            <audio id="audioPlayer" controls preload="none"></audio>
-          </div>
-          <!-- <button class="btn btn-primary" onclick="uploadFile()">
+    <div id="train-model" class="container-fluid">
+      <h1 class="h3 mb-3 fw-normal">Wisdom Weaver</h1>
+      <h1 class="h4 mb-3 fw-normal">Ingest Information</h1>
+      <div class="row">
+        <div class="col-md-12 fw-normal mb-2">
+          How would you like to ingest information?
+        </div>
+        <div class="col-md-12">
+          <select class="form-select" onchange="typeChanged(this)">
+            <option value="1">Text</option>
+            <!-- <option value="2">PDF</option> -->
+            <!-- <option value="3">Audio</option> -->
+          </select>
+        </div>
+        <div class="col-md-12 mt-2">
+          <textarea id="model-text" rows="10" placeholder="Copy paste text to be trained here."
+            class="form-control"></textarea>
+          <input id="model-text-source" type="text" class="form-control col-6"
+            placeholder="Enter source without spaces" />
+          <input id="model-pdf" type="text" class="form-control col-6" placeholder="Enter pdf online link here" />
+          <div id="model-audio" class="text-center mt-2">
+            <button class="btn btn-primary" onclick="startRecording()">
+              Start Recording
+            </button>
+            <button class="btn btn-primary" onclick="stopRecording()" disabled>
+              Stop Recording
+            </button>
+            <div class="mt-2 mb-1">
+              <audio id="audioPlayer" controls preload="none"></audio>
+            </div>
+            <!-- <button class="btn btn-primary" onclick="uploadFile()">
               Upload File
             </button> -->
-          <button class="btn btn-primary" onclick="transcribe()" disabled>
-            Display Transcription
+            <button class="btn btn-primary" onclick="transcribe()" disabled>
+              Display Transcription
+            </button>
+            <button class="btn btn-primary" onclick="summarize()" disabled>
+              Display Recording Summary
+            </button>
+            <div class="mt-3">
+              <small>Powerered by BridgeAI</small>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-12 mt-2 text-center main-buttons">
+          <button id="send-button" class="send-btn btn btn-primary text-center" onclick="startTraining();">
+            Ingest Information
           </button>
-          <button class="btn btn-primary" onclick="summarize()" disabled>
-            Display Recording Summary
-          </button>
-          <div class="mt-3">
-            <small>Powerered by BridgeAI</small>
+          <div class="dot-flashing mt-3" style="background-color: white"></div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="footer mt-auto py-2 bg-body-tertiary">
+      <div class="container">
+        <div></div>
+        <span class="text-body-secondary">
+          <div id="navigation">
+            <!-- <span><span onclick="askQueries();" class="text-decoration-underline text-pointer">Ask queries</span><span> |
+            </span></span> -->
+            <span onclick="home();" class="text-decoration-underline text-pointer">Home</span>
+            <span> | </span>
+            <span class="adminrole"><span onclick="trainModel();" class="text-decoration-underline text-pointer">Ingest
+                Information</span><span> | </span></span>
+            <span onclick="logout();" class="text-decoration-underline text-pointer">Log out</span>
+          </div>
+
+          <a href="https://www.innostrat.in/" target="_blank" style="color: #606060;">Innostrat Technologies |
+            Netherlands
+            | India | Denmark</a>
+        </span>
+      </div>
+    </footer>
+
+    <div id="modalText" class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog"
+      aria-labelledby="myLargeModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title"></h5>
+            <button type="button" class="close btn btn-primary" data-dismiss="modal" aria-label="Close"
+              onclick="closeModal()">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body" style="height: 70vh; overflow-y: auto">
+            <p id="modal-data"></p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal" onclick="closeModal()">
+              Close
+            </button>
           </div>
         </div>
       </div>
-      <div class="col-md-12 mt-2 text-center main-buttons">
-        <button id="send-button" class="send-btn btn btn-primary text-center" onclick="startTraining();">
-          Ingest Information
-        </button>
-        <div class="dot-flashing mt-3" style="background-color: white"></div>
-      </div>
     </div>
-  </div>
-
-  <footer class="footer mt-auto py-2 bg-body-tertiary">
-    <div class="container">
-      <div></div>
-      <span class="text-body-secondary">
-        <div id="navigation">
-          <!-- <span><span onclick="askQueries();" class="text-decoration-underline text-pointer">Ask queries</span><span> |
-            </span></span> -->
-          <span onclick="home();" class="text-decoration-underline text-pointer">Home</span>
-          <span> | </span>
-          <span class="adminrole"><span onclick="trainModel();" class="text-decoration-underline text-pointer">Ingest
-              Information</span><span> | </span></span>
-          <span onclick="logout();" class="text-decoration-underline text-pointer">Log out</span>
-        </div>
-
-        <a href="https://www.innostrat.in/" target="_blank" style="color: #606060;">Innostrat Technologies | Netherlands
-          | India | Denmark</a>
-      </span>
-    </div>
-  </footer>
-
-  <div id="modalText" class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog"
-    aria-labelledby="myLargeModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-lg">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title"></h5>
-          <button type="button" class="close btn btn-primary" data-dismiss="modal" aria-label="Close"
-            onclick="closeModal()">
-            <span aria-hidden="true">&times;</span>
-          </button>
-        </div>
-        <div class="modal-body" style="height: 70vh; overflow-y: auto">
-          <p id="modal-data"></p>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-dismiss="modal" onclick="closeModal()">
-            Close
-          </button>
-        </div>
-      </div>
-    </div>
-  </div>
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
-    crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
-    integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
-    crossorigin="anonymous"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
-  <script src="https://malsup.github.io/jquery.blockUI.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/lamejs/1.2.1/lame.min.js"></script>
-  <script src="js/site.js?v=2"></script>
-  <script src="js/streaming-client-api.js?v=2"></script>
-  <!-- <script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+      integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+      crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://malsup.github.io/jquery.blockUI.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lamejs/1.2.1/lame.min.js"></script>
+    <script src="js/site.js?v=2"></script>
+    <script src="js/streaming-client-api.js?v=2"></script>
+    <!-- <script>
     document.getElementById('navbarDropdown').addEventListener('click', function () {
       var dropdownMenu = this.nextElementSibling;
       dropdownMenu.classList.toggle('show');

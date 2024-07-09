@@ -888,6 +888,144 @@ textarea.form-control {
 /* -----------------------END START CONVO PAGE CSS-------------------------------- */
 
 
+/* -----------------------START PAGE 5 VIDEO CHAT ------------------------------------- */
+
+.bgback{
+  background-color: #FFFFFF;
+  width: 100%;
+  height: 0%;
+  border-radius: 5%;
+  margin-top:50px;
+  overflow: hidden;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.roundimg{
+  border-radius: 50%;
+  width: 324px;
+  height: 324px;
+  margin-top: 45px;
+  margin-left: 162px;
+  margin-bottom: 50px;
+  justify-content: center;
+  box-shadow: 2px 6px 39px 40px #b5b2b265;
+
+
+}
+
+.but {
+  width: 35%;
+  height: 60px !important;
+  border-radius: 30px;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  font-size: 18px;
+  cursor: pointer;
+  color: rgb(255, 253, 253); 
+  border: 2px solid ;
+  background-color: #000000;
+}
+
+.but1{
+
+  width: 25%;
+  height: 50px !important;
+  border-radius: 30px;
+  border: none;
+  color: rgb(0, 0, 0);
+  padding: 16px 32px;
+  text-align: center;
+  font-size: 18px;
+  cursor: pointer;
+  margin-bottom: 100px;
+  border: 2px solid ;
+  background-color: #ffffff;
+  margin-top: 20px;
+  align-items: center;
+  display: flex;
+}
+
+
+/* Media Queries for Responsiveness */
+
+@media (max-width: 1200px) {
+  .roundimg {
+    width: 270px;
+    height: 270px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .but {
+    width: 40%;
+    font-size: 16px;
+  }
+  .but1 {
+    width: 30%;
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 992px) {
+  .roundimg {
+    width: 220px;
+    height: 220px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .but {
+    width: 45%;
+    font-size: 15px;
+  }
+  .but1 {
+    width: 35%;
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 768px) {
+  .roundimg {
+    width: 180px;
+    height: 180px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .but {
+    width: 50%;
+    font-size: 14px;
+  }
+  .but1 {
+    width: 40%;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 576px) {
+  .bgback {
+    margin-top: 30px;
+  }
+  .roundimg {
+    width: 150px;
+    height: 150px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .but {
+    width: 70%;
+    font-size: 13px;
+    padding: 12px 24px;
+  }
+  .but1 {
+    width: 70%;
+    font-size: 13px;
+    padding: 12px 24px;
+    margin-top: 10px;
+    margin-bottom: 50px;
+  }
+}
+/* -----------------------START PAGE 5 VIDEO CHAT ------------------------------------- */
+
 /* End */
 
 
