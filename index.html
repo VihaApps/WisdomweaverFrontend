@@ -569,146 +569,42 @@
 
 
   <!------------------------------------------------------------------- START PAGE 5 VIDEO CHAT------------------ -->
+  
   <div id="chat-video" class="container-fluid">
-
-    <!-- NAV BAR START---------------------------------------------------------------------------------------------- -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light ">
-      <a class="navbar-brand mb-2" href="#">
-        <img src="/images/userlogo.png" alt="" class="src" style="height: 40px;">
-      </a>
-
-      
-      <div class="dropdown mb-2" style="margin-left: 10px;">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownWelcome" role="button" data-bs-toggle="dropdown"
-          aria-expanded="false" aria-expanded="false">
-          WelcomeUser
-        </a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdownWelcome">
-          <a class="dropdown-item" href="#">Action</a>
-          <a class="dropdown-item" href="#">Another action</a>
-          <div class="dropdown-divider"></div>
-          <a class="dropdown-item" href="#">Something else here</a>
-        </div>
-      </div>
-
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
-      <!-- <div class="collapse navbar-collapse mb-2" id="navbarSupportedContent"> -->
-      <ul class="navbar-nav ml-auto">
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"
-            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Use Cases
-          </a>
-          <div class="dropdown-menu" aria-labelledby="navbarDropdownUseCases">
-            <a class="dropdown-item" href="#">Action</a>
-            <a class="dropdown-item" href="#">Another action</a>
-            <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="#">Something else here</a>
+    <div class="row">
+      <div class="col-5" id="chat-video-text-section">
+        <div class="answers-video" style="height: calc(100vh - 210px); overflow-y: auto"></div>
+        <div class="row message">
+          <div class="col-6" id="section-question-video">
+            <textarea id="question-video" rows="2" placeholder="Send a message." class="form-control"></textarea>
           </div>
-        </li>
-        <li class="nav-item dropdown mb-2">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownResources" role="button"
-            data-bs-toggle="dropdown" aria-expanded="false" data-toggle="dropdown" aria-haspopup="true"
-            aria-expanded="false">
-            Resources
-          </a>
-          <div class="dropdown-menu" aria-labelledby="navbarDropdownResources">
-            <a class="dropdown-item" href="#">Action</a>
-            <a class="dropdown-item" href="#">Another action</a>
-            <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="#">Something else here</a>
-          </div>
-        </li>
-      </ul>
-      <a href="login" onclick="signIn();" class="alink3 mt-2 mr-4 mb-2">Login</a>
-      <button class="btnSignup1">
-        <a href="register" onclick="register();" class="alink4 mb-1">Sign Up</a>
-      </button>
-      <!-- </div> -->
-    </nav>
-    <div class="container-fluid">
-      <div class="">
-        <div class="">
-          <div class="col-6">
-        <div class="bgback">
-          <div class="mainpara1">
-            <span class="para1">
-              <h1>
-                Lets Begin our <b class="bb"><br>Conversation</br></b></h1>
-            </span>
-          </div>
-          <div class="roundimg">
-            <img src="images/Avatar4.png" alt="Avatar">
-          </div>
-          <div class="row" style="justify-content: center;">
-            <button id="start-recording" class="but" onclick="startRecordChat()">Start Conversation</button>
-            <button id="stop-recording" class="but" onclick="stopRecordChat()">
-              End Conversation
+          <div id="message-video-section" class="col-3 mt-2">
+            <button id="send-button" class="btn btn-primary w-100" onclick="sendMessageVideo();">
+              Send
             </button>
-            <div class="mb-1">
-              <audio style="display: none" id="audioPlayerChat" controls preload="none"></audio>
-            </div>
           </div>
-          <div class="row" style="justify-content: center;">
-            <button id="hide-button" class=" but1" onclick="showHideChat();">Toggle Chat</button>
-          </div>
-          <div class="row" style="justify-content: center;">
-
-          <button
-          id="end-session-button"
-          class="btn btn-danger"
-          onclick="endSession();"
-        >
-          End Session
-        </button>
-      </div>
-
-        </div>
-      </div>
-      <div class="col-6">
-        <div class="col-5" id="chat-video-text-section">
-          <div class="answers-video" style="height: calc(100vh - 210px); overflow-y: auto"></div>
-          <div class="row message">
-            <div class="col-6" id="section-question-video">
-              <textarea id="question-video" rows="2" placeholder="Send a message." class="form-control"></textarea>
-            </div>
-            <div id="message-video-section" class="col-3 mt-2">
-              <button id="send-button" class="btn btn-primary w-100" onclick="sendMessageVideo();">
-                Send
-              </button>
-            </div>
-            <div class="col-3 mt-2">
-              <button id="refresh-button" class="btn btn-secondary w-100" onclick="resetChatVideo()">
-                Reset
-              </button>
-              <div class="dot-flashing mt-3" style="background-color: white"></div>
-            </div>
+          <div class="col-3 mt-2">
+            <button id="refresh-button" class="btn btn-secondary w-100" onclick="resetChatVideo()">
+              Reset
+            </button>
+            <div class="dot-flashing mt-3" style="background-color: white"></div>
           </div>
         </div>
       </div>
-    </div>
-      </div>
-    </div>
 
-
- <div class="row">
       <div class="col-12 text-center avatar-section">
         <div class="container-chatgpt-video">
-           <video autoplay id="gptvideo" width="100%" height="300">
+          <!-- <video autoplay id="gptvideo" width="100%" height="300">
               <source id="videosource" src="" type="video/mp4" />
-            </video> 
-    <!-- added "id=video-wrapper" -->
-    <!-- <div id="video-wrapper">
+            </video> -->
+          <!-- added "id=video-wrapper" -->
+          <div id="video-wrapper">
             <div>
               <video id="talk-video" width="400" height="400" autoplay></video>
             </div>
-          </div> -->
+          </div>
 
-     <!-- <div id="status" style="color: black">
+          <!-- <div id="status" style="color: black">
               ICE gathering status:
               <label id="ice-gathering-status-label"></label><br />
               ICE status: <label id="ice-status-label"></label><br />
@@ -720,7 +616,7 @@
               ><br />
               <input id="talk-text" type="text" value="" />
             </div> -->
-</div>
+        </div>
         <div class="mt-3">
           <button id="start-recording" class="btn btn-primary" onclick="startRecordChat()">
             Start Recording
@@ -735,8 +631,8 @@
           <br />
           <button id="hide-button" class="btn btn-secondary" onclick="showHideChat();">
             Toggle Chat
-          </button> 
-           <br />
+          </button>
+          <!-- <br />
             <br />
             <button
               id="end-session-button"
@@ -744,11 +640,12 @@
               onclick="endSession();"
             >
               End Session
-            </button>
-     </div>
+            </button> -->
+        </div>
       </div>
-    </div> 
-  </div> 
+    </div>
+  </div>
+
 
 
     <!------------------------------------------------------------------- END PAGE 5 VIDEO CHAT------------------ -->

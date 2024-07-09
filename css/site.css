@@ -1074,7 +1074,7 @@ footer {
 }
 
 .message {
-  position: fixed;
+  /* position: fixed; */
   bottom: 0;
   width: inherit;
   color: white;
