@@ -631,59 +631,76 @@
       <!-- </div> -->
     </nav>
     <div class="container-fluid">
-
-      <div class="container">
-
+      <div class="">
+        <div class="">
+          <div class="col-6">
         <div class="bgback">
           <div class="mainpara1">
             <span class="para1">
               <h1>
                 Lets Begin our <b class="bb"><br>Conversation</br></b></h1>
             </span>
-
           </div>
           <div class="roundimg">
             <img src="images/Avatar4.png" alt="Avatar">
           </div>
           <div class="row" style="justify-content: center;">
-            <button class="but" onclick="startRecordChat()">Start Conversation</button>
+            <button id="start-recording" class="but" onclick="startRecordChat()">Start Conversation</button>
+            <button id="stop-recording" class="but" onclick="stopRecordChat()">
+              End Conversation
+            </button>
+            <div class="mb-1">
+              <audio style="display: none" id="audioPlayerChat" controls preload="none"></audio>
+            </div>
           </div>
           <div class="row" style="justify-content: center;">
-            <button class=" but1" onclick="showHideChat();">Toggle Chat</button>
+            <button id="hide-button" class=" but1" onclick="showHideChat();">Toggle Chat</button>
           </div>
+          <div class="row" style="justify-content: center;">
+
+          <button
+          id="end-session-button"
+          class="btn btn-danger"
+          onclick="endSession();"
+        >
+          End Session
+        </button>
+      </div>
 
         </div>
       </div>
-
+      <div class="col-6">
+        <div class="col-5" id="chat-video-text-section">
+          <div class="answers-video" style="height: calc(100vh - 210px); overflow-y: auto"></div>
+          <div class="row message">
+            <div class="col-6" id="section-question-video">
+              <textarea id="question-video" rows="2" placeholder="Send a message." class="form-control"></textarea>
+            </div>
+            <div id="message-video-section" class="col-3 mt-2">
+              <button id="send-button" class="btn btn-primary w-100" onclick="sendMessageVideo();">
+                Send
+              </button>
+            </div>
+            <div class="col-3 mt-2">
+              <button id="refresh-button" class="btn btn-secondary w-100" onclick="resetChatVideo()">
+                Reset
+              </button>
+              <div class="dot-flashing mt-3" style="background-color: white"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+      </div>
     </div>
 
 
-    <!-- <div class="row">
-      <div class="col-5" id="chat-video-text-section">
-        <div class="answers-video" style="height: calc(100vh - 210px); overflow-y: auto"></div>
-        <div class="row message">
-          <div class="col-6" id="section-question-video">
-            <textarea id="question-video" rows="2" placeholder="Send a message." class="form-control"></textarea>
-          </div>
-          <div id="message-video-section" class="col-3 mt-2">
-            <button id="send-button" class="btn btn-primary w-100" onclick="sendMessageVideo();">
-              Send
-            </button>
-          </div>
-          <div class="col-3 mt-2">
-            <button id="refresh-button" class="btn btn-secondary w-100" onclick="resetChatVideo()">
-              Reset
-            </button>
-            <div class="dot-flashing mt-3" style="background-color: white"></div>
-          </div>
-        </div>
-      </div>
-
+ <div class="row">
       <div class="col-12 text-center avatar-section">
         <div class="container-chatgpt-video">
            <video autoplay id="gptvideo" width="100%" height="300">
               <source id="videosource" src="" type="video/mp4" />
-            </video> -->
+            </video> 
     <!-- added "id=video-wrapper" -->
     <!-- <div id="video-wrapper">
             <div>
@@ -691,7 +708,7 @@
             </div>
           </div> -->
 
-    <!-- <div id="status" style="color: black">
+     <!-- <div id="status" style="color: black">
               ICE gathering status:
               <label id="ice-gathering-status-label"></label><br />
               ICE status: <label id="ice-status-label"></label><br />
@@ -703,7 +720,7 @@
               ><br />
               <input id="talk-text" type="text" value="" />
             </div> -->
-    <!-- </div>
+</div>
         <div class="mt-3">
           <button id="start-recording" class="btn btn-primary" onclick="startRecordChat()">
             Start Recording
@@ -718,8 +735,8 @@
           <br />
           <button id="hide-button" class="btn btn-secondary" onclick="showHideChat();">
             Toggle Chat
-          </button> -->
-    <!-- <br />
+          </button> 
+           <br />
             <br />
             <button
               id="end-session-button"
@@ -727,11 +744,11 @@
               onclick="endSession();"
             >
               End Session
-            </button> -->
-    <!-- </div>
+            </button>
+     </div>
       </div>
     </div> 
-  </div> -->
+  </div> 
 
 
     <!------------------------------------------------------------------- END PAGE 5 VIDEO CHAT------------------ -->

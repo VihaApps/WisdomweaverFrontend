@@ -68,6 +68,7 @@ $(document).ready(function () {
     $("#knowledge_source").hide();
     $("#login").show();
   }
+  $("#stop-recording").hide();
   $("#chat-video-text-section").hide();
   $(".dot-flashing").hide();
 
