@@ -49,8 +49,8 @@ $(document).ready(function () {
     $("#train-model").hide();
     $("#model-audio").hide();
     $("#model-pdf").hide();
-    $("#chat").hide();
-    $("#chat-video").hide();
+    $("#chat").show();
+    $("#chat-video").show();
     $("#options_page").hide();
     $("#choose_avatar").hide();
     $("#knowledge_source").hide();
@@ -60,8 +60,8 @@ $(document).ready(function () {
     $("#navigation").hide();
     $("#model-audio").hide();
     $("#model-pdf").hide();
-    $("#chat").hide();
-    $("#chat-video").hide();
+    $("#chat").show();
+    $("#chat-video").show();
     $("#landing_page").hide();
     $("#options_page").hide();
     $("#choose_avatar").hide();
@@ -83,8 +83,9 @@ $(document).ready(function () {
   $("#login").hide();
   $("#landing_page").hide();
   $("#chat").show();
-  // $("#chat-video").show();
-  // playIdleVideo();
+  $("#knowledge_source").hide();
+  $("#chat-video").show();
+  playIdleVideo();
 });
 
 function getToken() {
@@ -222,7 +223,7 @@ function startTextChat() {
   uid = Date.now();
   const answerHtml = `
         <div class="container-chatgpt">
-          <img src="images/chatgpt.png" alt="ChatGPT Avatar" class="user-avatar" />
+           <img src="images/Avatar3.png" alt="ChatGPT Avatar" class="user-avatar" />
           <p class="pt-2 text gptanswer${uid}"></p>
         </div>
         `;
@@ -361,7 +362,7 @@ function sendMessageKS() {
         uid = Date.now();
         const answerHtml = `
         <div class="container-chatgpt">
-          <img src="images/chatgpt.png" alt="ChatGPT Avatar" class="user-avatar" />
+          // <img src="images/chatgpt.png" alt="ChatGPT Avatar" class="user-avatar" />
           <p class="pt-2 text gptanswer${uid}"></p>
           <p class="pt-2 source_ks${uid}"></p>
         </div>
@@ -445,7 +446,7 @@ function sendMessageVideo() {
         uid = Date.now();
         const answerHtml = `
         <div class="container-chatgpt">
-          <img src="images/chatgpt.png" alt="ChatGPT Avatar" class="user-avatar" />
+          // <img src="images/chatgpt.png" alt="ChatGPT Avatar" class="user-avatar" />
           <p class="pt-2 text gptanswer${uid}"></p>
         </div>
         `;

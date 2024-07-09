@@ -382,6 +382,7 @@ body {
 
 
 /* SECOND PAGE CSS */
+
 @media (min-width: 992px) {
   .navbar-expand-lg .navbar-nav {
     -ms-flex-direction: row;
@@ -458,6 +459,66 @@ body {
 .show {
   display: block;
 }
+
+
+@media (max-width: 1200px) {
+  .dropdown {
+    margin-right: 20px;
+  }
+  .dropdown-toggle {
+    font-size: 0.9rem;
+    padding: 0.35rem 0.7rem;
+  }
+  .dropdown-menu {
+    min-width: 8rem;
+  }
+}
+
+@media (max-width: 992px) {
+  .dropdown {
+    margin-right: 15px;
+  }
+  .dropdown-toggle {
+    font-size: 0.85rem;
+    padding: 0.3rem 0.65rem;
+  }
+  .dropdown-menu {
+    min-width: 7rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .dropdown {
+    margin-right: 10px;
+  }
+  .dropdown-toggle {
+    font-size: 0.8rem;
+    padding: 0.25rem 0.6rem;
+  }
+  .dropdown-menu {
+    min-width: 6rem;
+  }
+  .dropdown-item {
+    padding: 0.2rem 1rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .dropdown {
+    margin-right: 5px;
+  }
+  .dropdown-toggle {
+    font-size: 0.75rem;
+    padding: 0.2rem 0.55rem;
+  }
+  .dropdown-menu {
+    min-width: 5rem;
+  }
+  .dropdown-item {
+    padding: 0.15rem 0.5rem;
+  }
+}
+
 
 /* END SECOND  */
 
@@ -616,7 +677,7 @@ body {
   width: 100%;
   height: 90%;
   border-radius: 5%;
-  margin-top: 80px;
+  margin-top: 20px;
   overflow: hidden;
   /* display: flex; */
     justify-content: space-between;
@@ -806,7 +867,7 @@ textarea.form-control {
     margin-top: 20px;
   }
   .minichet {
-    width: 100%;
+    width: 80%;
     margin-top: 20px;
   }
   .butto0nn, .butto0n {
