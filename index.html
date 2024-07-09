@@ -572,26 +572,6 @@
   
   <div id="chat-video" class="container-fluid">
     <div class="row">
-      <div class="col-5" id="chat-video-text-section">
-        <div class="answers-video" style="height: calc(100vh - 210px); overflow-y: auto"></div>
-        <div class="row message">
-          <div class="col-6" id="section-question-video">
-            <textarea id="question-video" rows="2" placeholder="Send a message." class="form-control"></textarea>
-          </div>
-          <div id="message-video-section" class="col-3 mt-2">
-            <button id="send-button" class="btn btn-primary w-100" onclick="sendMessageVideo();">
-              Send
-            </button>
-          </div>
-          <div class="col-3 mt-2">
-            <button id="refresh-button" class="btn btn-secondary w-100" onclick="resetChatVideo()">
-              Reset
-            </button>
-            <div class="dot-flashing mt-3" style="background-color: white"></div>
-          </div>
-        </div>
-      </div>
-
       <div class="col-12 text-center avatar-section">
         <div class="container-chatgpt-video">
           <!-- <video autoplay id="gptvideo" width="100%" height="300">
@@ -643,6 +623,26 @@
             </button> -->
         </div>
       </div>
+      <div class="col-5" id="chat-video-text-section">
+        <div class="answers-video" style="height: calc(100vh - 210px); overflow-y: auto"></div>
+        <div class="row message">
+          <div class="col-6" id="section-question-video">
+            <textarea id="question-video" rows="2" placeholder="Send a message." class="form-control"></textarea>
+          </div>
+          <div id="message-video-section" class="col-3 mt-2">
+            <button id="send-button" class="btn btn-primary w-100" onclick="sendMessageVideo();">
+              Send
+            </button>
+          </div>
+          <div class="col-3 mt-2">
+            <button id="refresh-button" class="btn btn-secondary w-100" onclick="resetChatVideo()">
+              Reset
+            </button>
+            <div class="dot-flashing mt-3" style="background-color: white"></div>
+          </div>
+        </div>
+      </div>
+   
     </div>
   </div>
 
