@@ -82,7 +82,7 @@ $(document).ready(function () {
   //Use this for development
   $("#login").hide();
   $("#landing_page").hide();
-  $("#chat").show();
+  $("#chat").hide();
   $("#knowledge_source").hide();
   $("#chat-video").show();
   playIdleVideo();
@@ -281,7 +281,9 @@ function sendMessage() {
   };
   const questionHtml = `<div class="container-user" >
           <img src="images/avatar3.png" alt="Avatar" class="user-avatar" />
-          <div class="pt-2 texxtt custom-container-user containeerr" >${$("#question").val() }</div>
+          <div class="pt-2 texxtt custom-container-user containeerr" >${$(
+            "#question"
+          ).val()}</div>
         </div>`;
   $(".answers").append(questionHtml);
   $(".answers").animate({ scrollTop: $(".answers")[0].scrollHeight }, 1000);
