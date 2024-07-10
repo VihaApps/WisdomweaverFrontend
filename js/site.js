@@ -407,8 +407,8 @@ function sendMessageVideo() {
     chatType: chatType,
   };
   const questionHtml = `<div class="container-user">
-          <img src="images/avatar.png" alt="Avatar" class="user-avatar" />
-          <p class="pt-2 text">${$("#question-video").val()}</p>
+          <img src="images/Avatar3.png" alt="Avatar" class=" user-avatar1 user-avatar" />
+          <p class="pt-2 text quetxt que1">${$("#question-video").val()}</p>
         </div>`;
   $(".answers-video").append(questionHtml);
   $(".answers-video").animate(
@@ -448,9 +448,9 @@ function sendMessageVideo() {
 
         uid = Date.now();
         const answerHtml = `
-        <div class="container-chatgpt">
-          // <img src="images/chatgpt.png" alt="ChatGPT Avatar" class="user-avatar" />
-          <p class="pt-2 text gptanswer${uid}"></p>
+        <div class="container-chatgpt1 container-chatgpt">
+          
+          <p class="pt-2 text gptanswer${uid}   custom-video1"></p>
         </div>
         `;
         $(".answers-video").append(answerHtml);
