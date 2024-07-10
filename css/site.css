@@ -759,11 +759,11 @@ textarea.form-control {
   background-color: none!;
   color: rgb(3 3 5) !important;
   display: inline;
+  
 }
 
 .texxxttt {
   margin-top: 0px;
-  margin-left: 80px;
   /* margin-left: 90px; */
   background-color: #0379db;
   border-radius: 25px 25px 0px 25px;
@@ -857,7 +857,7 @@ textarea.form-control {
   width: 500px;
   height: 750px;
   border-radius: 50px;
-  margin-top: 80px;
+  margin-top: 20px;
   margin-left: 50px;
 }
 

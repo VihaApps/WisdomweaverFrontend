@@ -96,7 +96,20 @@
       <div class="col-lg-7">
         <div class="row">
           <div class="loginuser">
-            <img src="/images/WelcomeUser.png" alt="Welcome User" class="img-fluid" />
+            <a class="navbar-brand mb-2" href="#">
+              <img src="/images/userlogo.png" alt="" class="src" style="height: 40px;">
+            </a>
+      
+            <div class="dropdown mb-2" style="margin-left: 10px;">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownWelcome" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false" aria-expanded="false">
+                Welcome User
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdownWelcome">
+                <!-- <div class="dropdown-divider"></div> -->
+                <a class="dropdown-item" href="#">Log Out</a>
+              </div>
+            </div>
           </div>
         </div>
         <div class="container">
@@ -212,13 +225,11 @@
       <div class="dropdown mb-2" style="margin-left: 10px;">
         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownWelcome" role="button" data-bs-toggle="dropdown"
           aria-expanded="false" aria-expanded="false">
-          WelcomeUser
+          Welcome User
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdownWelcome">
-          <a class="dropdown-item" href="#">Action</a>
-          <a class="dropdown-item" href="#">Another action</a>
-          <div class="dropdown-divider"></div>
-          <a class="dropdown-item" href="#">Something else here</a>
+          <!-- <div class="dropdown-divider"></div> -->
+          <a class="dropdown-item" href="#">Log Out</a>
         </div>
       </div>
 
@@ -235,11 +246,11 @@
             Use Cases
           </a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdownUseCases">
-            <a class="dropdown-item" href="#">Action</a>
-            <a class="dropdown-item" href="#">Another action</a>
-            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Use Case1</a>
+            <a class="dropdown-item" href="#">User Case2</a>
+            <!-- <div class="dropdown-divider"></div>
             <a class="dropdown-item" href="#">Something else here</a>
-          </div>
+          </div> -->
         </li>
         <li class="nav-item dropdown mb-2">
           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownResources" role="button"
@@ -248,11 +259,11 @@
             Resources
           </a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdownResources">
-            <a class="dropdown-item" href="#">Action</a>
-            <a class="dropdown-item" href="#">Another action</a>
-            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Resource1</a>
+            <a class="dropdown-item" href="#">Resource2</a>
+            <!-- <div class="dropdown-divider"></div>
             <a class="dropdown-item" href="#">Something else here</a>
-          </div>
+          </div> -->
         </li>
       </ul>
       <a href="login" onclick="signIn();" class="alink3 mt-2 mr-4 mb-2">Login</a>
@@ -349,7 +360,7 @@
       <div class="dropdown mb-2" style="margin-left: 10px;">
         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownWelcome" role="button" data-toggle="dropdown"
           aria-haspopup="true" aria-expanded="false">
-          WelcomeUser
+          Welcome User
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdownWelcome">
           <a class="dropdown-item" href="#">Action</a>
@@ -367,28 +378,29 @@
       <div class="collapse navbar-collapse mb-2" id="navbarSupportedContent">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownUseCases" role="button"
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"
               data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               Use Cases
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdownUseCases">
-              <a class="dropdown-item" href="#">Action</a>
-              <a class="dropdown-item" href="#">Another action</a>
-              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Use Case1</a>
+              <a class="dropdown-item" href="#">User Case2</a>
+              <!-- <div class="dropdown-divider"></div>
               <a class="dropdown-item" href="#">Something else here</a>
-            </div>
+            </div> -->
           </li>
           <li class="nav-item dropdown mb-2">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownResources" role="button"
-              data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              data-bs-toggle="dropdown" aria-expanded="false" data-toggle="dropdown" aria-haspopup="true"
+              aria-expanded="false">
               Resources
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdownResources">
-              <a class="dropdown-item" href="#">Action</a>
-              <a class="dropdown-item" href="#">Another action</a>
-              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Resource1</a>
+              <a class="dropdown-item" href="#">Resource2</a>
+              <!-- <div class="dropdown-divider"></div>
               <a class="dropdown-item" href="#">Something else here</a>
-            </div>
+            </div> -->
           </li>
         </ul>
         <a href="login" onclick="signIn();" class="alink3 mt-2 mb-2">Login</a>
@@ -457,7 +469,7 @@
       <div class="dropdown mb-2" style="margin-left: 10px;">
         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownWelcome" role="button" data-bs-toggle="dropdown"
           aria-expanded="false" aria-expanded="false">
-          WelcomeUser
+          Welcome User
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdownWelcome">
           <a class="dropdown-item" href="#">Action</a>
@@ -473,33 +485,33 @@
       </button>
 
       <!-- <div class="collapse navbar-collapse mb-2" id="navbarSupportedContent"> -->
-      <ul class="navbar-nav ml-auto">
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"
-            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Use Cases
-          </a>
-          <div class="dropdown-menu" aria-labelledby="navbarDropdownUseCases">
-            <a class="dropdown-item" href="#">Action</a>
-            <a class="dropdown-item" href="#">Another action</a>
-            <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="#">Something else here</a>
-          </div>
-        </li>
-        <li class="nav-item dropdown mb-2">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownResources" role="button"
-            data-bs-toggle="dropdown" aria-expanded="false" data-toggle="dropdown" aria-haspopup="true"
-            aria-expanded="false">
-            Resources
-          </a>
-          <div class="dropdown-menu" aria-labelledby="navbarDropdownResources">
-            <a class="dropdown-item" href="#">Action</a>
-            <a class="dropdown-item" href="#">Another action</a>
-            <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="#">Something else here</a>
-          </div>
-        </li>
-      </ul>
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"
+              data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Use Cases
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownUseCases">
+              <a class="dropdown-item" href="#">Use Case1</a>
+              <a class="dropdown-item" href="#">User Case2</a>
+              <!-- <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </div> -->
+          </li>
+          <li class="nav-item dropdown mb-2">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownResources" role="button"
+              data-bs-toggle="dropdown" aria-expanded="false" data-toggle="dropdown" aria-haspopup="true"
+              aria-expanded="false">
+              Resources
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownResources">
+              <a class="dropdown-item" href="#">Resource1</a>
+              <a class="dropdown-item" href="#">Resource2</a>
+              <!-- <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </div> -->
+          </li>
+        </ul>
       <a href="login" onclick="signIn();" class="alink3 mt-2 mr-4 mb-2">Login</a>
       <button class="btnSignup1">
         <a href="register" onclick="register();" class="alink4 mb-1">Sign Up</a>
@@ -575,6 +587,67 @@
   <!------------------------------------------------------------------- START PAGE 5 VIDEO CHAT------------------ -->
   
   <div id="chat-video" class="container-fluid">
+     <!-- NAV BAR START---------------------------------------------------------------------------------------------- -->
+     <nav class="navbar navbar-expand-lg navbar-light bg-light ">
+      <a class="navbar-brand mb-2" href="#">
+        <img src="/images/userlogo.png" alt="" class="src" style="height: 40px;">
+      </a>
+
+      <div class="dropdown mb-2" style="margin-left: 10px;">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownWelcome" role="button" data-bs-toggle="dropdown"
+          aria-expanded="false" aria-expanded="false">
+          Welcome User
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownWelcome">
+          <a class="dropdown-item" href="#">Action</a>
+          <a class="dropdown-item" href="#">Another action</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">Something else here</a>
+        </div>
+      </div>
+
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- <div class="collapse navbar-collapse mb-2" id="navbarSupportedContent"> -->
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"
+              data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Use Cases
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownUseCases">
+              <a class="dropdown-item" href="#">Use Case1</a>
+              <a class="dropdown-item" href="#">User Case2</a>
+              <!-- <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </div> -->
+          </li>
+          <li class="nav-item dropdown mb-2">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownResources" role="button"
+              data-bs-toggle="dropdown" aria-expanded="false" data-toggle="dropdown" aria-haspopup="true"
+              aria-expanded="false">
+              Resources
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownResources">
+              <a class="dropdown-item" href="#">Resource1</a>
+              <a class="dropdown-item" href="#">Resource2</a>
+              <!-- <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </div> -->
+          </li>
+        </ul>
+      <a href="login" onclick="signIn();" class="alink3 mt-2 mr-4 mb-2">Login</a>
+      <button class="btnSignup1">
+        <a href="register" onclick="register();" class="alink4 mb-1">Sign Up</a>
+      </button>
+      <!-- </div> -->
+    </nav>
+
+    <!-- ----------------------- END OF NAV BAR START---------------------------------------------------------------------------------------------- -->
+
     <div class="row">
       <div class="col-12 text-center avatar-section">
         <div class="container-chatgpt-video">
