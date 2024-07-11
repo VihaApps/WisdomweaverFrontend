@@ -60,8 +60,8 @@ $(document).ready(function () {
     $("#navigation").hide();
     $("#model-audio").hide();
     $("#model-pdf").hide();
-    $("#chat").show();
-    $("#chat-video").show();
+    $("#chat").hide();
+    $("#chat-video").hide();
     $("#landing_page").hide();
     $("#options_page").hide();
     $("#choose_avatar").hide();
@@ -225,7 +225,7 @@ function startTextChat() {
   const answerHtml = `
         <div class="container-chatgpt">
            <img src="images/Avatar3.png" alt="ChatGPT Avatar" class="user-avatar" />
-          <p class="pt-2 text gptanswer${uid}"></p>
+          <p class="pt-2 texxtt custom-container-user containeerr gptanswer${uid}"></p>
         </div>
         `;
   $(".answers").append(answerHtml);
@@ -281,8 +281,7 @@ function sendMessage() {
     chatType: chatType,
   };
   const questionHtml = `<div class="container-user" >
-          <img src="images/avatar3.png" alt="Avatar" class="user-avatar" />
-          <div class="pt-2 texxtt custom-container-user containeerr" >${$(
+          <div class="pt-2 texxxttt custom-container-userrr">${$(
             "#question"
           ).val()}</div>
         </div>`;
@@ -309,7 +308,8 @@ function sendMessage() {
         uid = Date.now();
         const answerHtml = `
         <div class="container-chatgpt">
-          <div class="pt-2 text gptanswer${uid} texxxttt custom-container-userrr"></div>
+          <img src="images/Avatar3.png" alt="ChatGPT Avatar" class="user-avatar">
+          <div class="pt-2 texxtt custom-container-user containeerr  gptanswer${uid}"></div>
         </div>
         `;
         $(".answers").append(answerHtml);
