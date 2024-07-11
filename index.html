@@ -43,16 +43,16 @@
         <h1>Login</h1>
         <div class="form-group">
           <label for="exampleInputEmail1">Email address or user name </label>
-          <input class="form-control" id="floatingInput" aria-describedby="emailHelp">
+          <input class="form-control email1" id="floatingInput" aria-describedby="emailHelp">
         </div>
         <div class="form-group">
           <!-- <span class="password-toggle-icon"><i class="fa fa-eye"></i></span> -->
           <label for="exampleInputPassword1">Password</label>
-          <input type="password" class="form-control" id="floatingPassword">
+          <input type="password" class="form-control password1" id="floatingPassword">
         </div>
         <div class="form-group form-check">
           <input type="checkbox" class="form-check-input" id="exampleCheck1">
-          <label class="form-check-label" for="exampleCheck1">Remember me</label>
+          <label class="form-check-label" for="exampleCheck1 email1">Remember me</label>
         </div>
 
         <span class="terms">
@@ -95,19 +95,19 @@
     <div class="row">
       <div class="col-lg-7">
         <div class="row">
-          <div class="loginuser " >
+          <div class="loginuser ">
             <a class="navbar-brand mb-2" href="#">
               <img src="/images/userlogo.png" alt="" class="src" style="height: 40px;">
             </a>
 
-            <div class="dropdown mb-2" >
+            <div class="dropdown mb-2">
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownWelcome" role="button"
                 data-bs-toggle="dropdown" aria-expanded="false" aria-expanded="false">
                 Welcome User
               </a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdownWelcome">
                 <!-- <div class="dropdown-divider"></div> -->
-                <a class="dropdown-item" href="#">Log Out</a>
+                <a class="dropdown-item" href="#" onclick="logout();">Log Out</a>
               </div>
             </div>
           </div>
@@ -131,8 +131,8 @@
             <div class="row" style="margin-top: 20px">
               <span>
 
-                <img src="/images/RightArrow.png" alt="" style="font-size: 48px; float: left; padding: 5px; "
-                  onclick="landing_page_click()">
+                <img src="/images/RightArrow.png" alt=""
+                  style="font-size: 48px; float: left; padding: 5px; cursor:pointer;" onclick="landing_page_click()">
               </span>
             </div>
           </div>
@@ -141,7 +141,7 @@
       <div class="col-lg-5">
         <div class="row" style="justify-items: center;">
           <div class="col-lg-12">
-            <img src="/images/Background.png" class="backgroundimg" style="width: 100%;" />
+            <img src="/images/Background.png" class="backgroundimg " style="width: 100%;" />
           </div>
         </div>
         <div class="row ">
@@ -175,7 +175,7 @@
           <div class="col-lg-6 loginRegister ">
             <!-- Login-Register -->
             <!-- <button class="btn btn-primary" onclick="signIn();">Login</button> -->
-            <a href="login" onclick="signIn();" class="alink1 mt-1">Login</a>
+            <a href="login" onclick="signIn();" class="alink1 mt-1">Logout</a>
             <button class="btnSignup">
               <a href="register" onclick="register();" class="alink2">Sign Up</a>
             </button>
@@ -266,7 +266,7 @@
           </div> -->
         </li>
       </ul>
-      <a href="login" onclick="signIn();" class="alink3 mt-2 mr-4 mb-2">Login</a>
+      <a href="login" onclick="signIn();" class="alink3 mt-2 mr-4 mb-2">Logout</a>
       <button class="btnSignup1">
         <a href="register" onclick="register();" class="alink4 mb-1">Sign Up</a>
       </button>
@@ -290,10 +290,10 @@
               <br>tempor incididunt ut labore et dolore magna aliqua.
             </p>
           </div>
-          <div class="roundHeading">
+          <div class="roundHeading" onclick="options_page_click('offboarding')">
             <ul class="ulRoundItem">
               <li>
-                <div id="rcorners2"><a onclick="options_page_click('offboarding')"> Offboarding </a></div>
+                <div id="rcorners2"><a> Offboarding </a></div>
               </li>
               <!-- <li>
                 <div id="rcorners2"><a onclick="options_page_click('knowledge_source')"> Access Knowledge Source</a>
@@ -305,31 +305,35 @@
                 </div>
               </li> -->
               <li>
-                <div id="rcorners2">
+                <div id="rcorners3">
                   <a> Sales</a>
                 </div>
               </li>
               <li>
-                <div id="rcorners2">
+                <div id="rcorners3">
                   <a> Customer Service</a>
                 </div>
               </li>
               <li>
-                <div id="rcorners2">
+                <div id="rcorners3">
                   <a> Tech Support</a>
                 </div>
               <li>
-                <div id="rcorners2">
+                <div id="rcorners3">
                   <a> GxP</a>
                 </div>
               </li>
               <li>
-                <div id="rcorners2">
+                <div id="rcorners3">
                   <a> R&D</a>
                 </div>
               </li>
             </ul>
-
+          </div>
+          <div class="row">
+            <p class="para2" onclick="options_page_click('knowledge_source')" style="margin-left: 100px;cursor: pointer;">
+              Access Knowledge
+            </p>
           </div>
           <!-- <div>
           <a href="#">Access knowledge source</a>
@@ -351,64 +355,64 @@
 
   <div id="choose_avatar" class="container-fluid">
 
-   <!-- NAV BAR START---------------------------------------------------------------------------------------------- -->
-   <nav class="navbar navbar-expand-lg navbar-light bg-light ">
-    <a class="navbar-brand mb-2" href="#">
-      <img src="/images/userlogo.png" alt="" class="src" style="height: 40px;">
-    </a>
-
-    <div class="dropdown mb-2" style="margin-left: 10px;">
-      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownWelcome" role="button" data-bs-toggle="dropdown"
-        aria-expanded="false" aria-expanded="false">
-        Welcome User
+    <!-- NAV BAR START---------------------------------------------------------------------------------------------- -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light ">
+      <a class="navbar-brand mb-2" href="#">
+        <img src="/images/userlogo.png" alt="" class="src" style="height: 40px;">
       </a>
-      <div class="dropdown-menu" aria-labelledby="navbarDropdownWelcome">
-        <!-- <div class="dropdown-divider"></div> -->
-        <a class="dropdown-item" href="#">Log Out</a>
+
+      <div class="dropdown mb-2" style="margin-left: 10px;">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownWelcome" role="button" data-bs-toggle="dropdown"
+          aria-expanded="false" aria-expanded="false">
+          Welcome User
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownWelcome">
+          <!-- <div class="dropdown-divider"></div> -->
+          <a class="dropdown-item" href="#">Log Out</a>
+        </div>
       </div>
-    </div>
 
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-    <!-- <div class="collapse navbar-collapse mb-2" id="navbarSupportedContent"> -->
-    <ul class="navbar-nav ml-auto" style="margin-top: 10px;">
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"
-          data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Use Cases
-        </a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdownUseCases">
-          <a class="dropdown-item" href="#">Use Case1</a>
-          <a class="dropdown-item" href="#">User Case2</a>
-          <!-- <div class="dropdown-divider"></div>
+      <!-- <div class="collapse navbar-collapse mb-2" id="navbarSupportedContent"> -->
+      <ul class="navbar-nav ml-auto" style="margin-top: 10px;">
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"
+            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Use Cases
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdownUseCases">
+            <a class="dropdown-item" href="#">Use Case1</a>
+            <a class="dropdown-item" href="#">User Case2</a>
+            <!-- <div class="dropdown-divider"></div>
           <a class="dropdown-item" href="#">Something else here</a>
         </div> -->
-      </li>
-      <li class="nav-item dropdown mb-2">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownResources" role="button"
-          data-bs-toggle="dropdown" aria-expanded="false" data-toggle="dropdown" aria-haspopup="true"
-          aria-expanded="false">
-          Resources
-        </a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdownResources">
-          <a class="dropdown-item" href="#">Resource1</a>
-          <a class="dropdown-item" href="#">Resource2</a>
-          <!-- <div class="dropdown-divider"></div>
+        </li>
+        <li class="nav-item dropdown mb-2">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownResources" role="button"
+            data-bs-toggle="dropdown" aria-expanded="false" data-toggle="dropdown" aria-haspopup="true"
+            aria-expanded="false">
+            Resources
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdownResources">
+            <a class="dropdown-item" href="#">Resource1</a>
+            <a class="dropdown-item" href="#">Resource2</a>
+            <!-- <div class="dropdown-divider"></div>
           <a class="dropdown-item" href="#">Something else here</a>
         </div> -->
-      </li>
-    </ul>
-    <a href="login" onclick="signIn();" class="alink3 mt-2 mr-4 mb-2">Login</a>
-    <button class="btnSignup1">
-      <a href="register" onclick="register();" class="alink4 mb-1">Sign Up</a>
-    </button>
-    <!-- </div> -->
-  </nav>
+        </li>
+      </ul>
+      <a href="login" onclick="signIn();" class="alink3 mt-2 mr-4 mb-2">Logout</a>
+      <button class="btnSignup1">
+        <a href="register" onclick="register();" class="alink4 mb-1">Sign Up</a>
+      </button>
+      <!-- </div> -->
+    </nav>
 
-  <!-- ----------------------- END OF NAV BAR START---------------------------------------------------------------------------------------------- -->
+    <!-- ----------------------- END OF NAV BAR START---------------------------------------------------------------------------------------------- -->
 
 
     <div id="choose_avatar" class="container">
@@ -470,7 +474,7 @@
           Welcome User
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdownWelcome">
-          
+
           <a class="dropdown-item" href="#"> Log Out</a>
         </div>
       </div>
@@ -508,7 +512,7 @@
             </div> -->
         </li>
       </ul>
-      <a href="login" onclick="signIn();" class="alink3 mt-2 mr-4 mb-2">Login</a>
+      <a href="login" onclick="signIn();" class="alink3 mt-2 mr-4 mb-2">Logout</a>
       <button class="btnSignup1">
         <a href="register" onclick="register();" class="alink4 mb-1">Sign Up</a>
       </button>
@@ -543,13 +547,16 @@
             <!-- Chet Box -->
           </div>
           <div class=" container">
-            <div class="row minichet">
+            <div class="row minichet1">
               <textarea id="question" rows="2" placeholder="Send a message." class="form-control msgtxt"></textarea>
+
             </div>
           </div>
-          <button class="butto0nn" id="send-button" onclick="sendMessage();">Send</button>
-          <button class="butto0n" id="refresh-button" onclick="resetChat();">Reset</button>
-
+          <div class="row" style="margin-top: -45px;">
+            <button class="butto0nn" id="send-button" onclick="sendMessage(); "
+              style="margin-bottom: 50px;">Send</button>
+            <button class="butto0n" id="refresh-button" onclick="resetChat();">Reset</button>
+          </div>
         </div>
       </div>
     </div>
@@ -572,7 +579,7 @@
           Welcome User
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdownWelcome">
-          
+
           <a class="dropdown-item" href="#"> Log Out</a>
         </div>
       </div>
@@ -610,7 +617,7 @@
             </div> -->
         </li>
       </ul>
-      <a href="login" onclick="signIn();" class="alink3 mt-2 mr-4 mb-2">Login</a>
+      <a href="login" onclick="signIn();" class="alink3 mt-2 mr-4 mb-2">Logout</a>
       <button class="btnSignup1">
         <a href="register" onclick="register();" class="alink4 mb-1">Sign Up</a>
       </button>
@@ -619,7 +626,7 @@
 
     <!-- ----------------------- END OF NAV BAR START---------------------------------------------------------------------------------------------- -->
 
-    <div class="row" >
+    <div class="row">
       <div class="col-12 text-center avatar-section">
         <div class="container-chatgpt-video d-flex justify-content-center align-items-center">
           <!-- <video autoplay id="gptvideo" width="100%" height="300">
@@ -639,10 +646,10 @@
 
 
             <button id="start-recording" class="but" onclick="startRecordChat()">
-          Start Recording
+              Start Recording
             </button>
             <button id="stop-recording" class="but" onclick="stopRecordChat()" disabled>
-             Stop Recording
+              Stop Recording
             </button>
             <div class="mb-1">
               <audio style="display: none" id="audioPlayerChat" controls preload="none"></audio>
@@ -707,17 +714,19 @@
 
       <div class="col-5" id="chat-video-text-section">
         <div class="container videochat">
-            <div class="answers-video"></div>
-            <div class="input-container">
-                <div class="minichet" id="section-question-video">
-                    <textarea id="question-video" rows="2" placeholder="Send a message." class="form-control fixed-textarea"></textarea>
-                    <button id="message-video-section-send-button" class=" butto0nn11" onclick="sendMessageVideo();">Send</button>
-                    <button id="refresh-button" class="butto0n11" onclick="resetChatVideo()">Reset</button>
-                </div>
-                <div class="dot-flashing mt-3" style="background-color: rgb(255, 255, 255)"></div>
+          <div class="answers-video"></div>
+          <div class="input-container">
+            <div class="minichet" id="section-question-video">
+              <textarea id="question-video" rows="2" placeholder="Send a message."
+                class="form-control fixed-textarea"></textarea>
+              <button id="message-video-section-send-button" class=" butto0nn11"
+                onclick="sendMessageVideo();">Send</button>
+              <button id="refresh-button" class="butto0n11" onclick="resetChatVideo()">Reset</button>
             </div>
+            <div class="dot-flashing mt-3" style="background-color: rgb(255, 255, 255)"></div>
+          </div>
         </div>
-    </div>
+      </div>
     </div>
   </div>
 

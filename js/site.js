@@ -53,19 +53,19 @@ $(document).ready(function () {
     $("#chat-video").show();
     $("#options_page").hide();
     $("#choose_avatar").hide();
-    $("#knowledge_source").hide();
+    $("#knowledge_source").show();
     initialize();
   } else {
     $("#train-model").hide();
     $("#navigation").hide();
     $("#model-audio").hide();
     $("#model-pdf").hide();
-    $("#chat").hide();
-    $("#chat-video").hide();
+    $("#chat").show();
+    $("#chat-video").show();
     $("#landing_page").hide();
     $("#options_page").hide();
     $("#choose_avatar").hide();
-    $("#knowledge_source").hide();
+    $("#knowledge_source").show();
     $("#login").show();
   }
   $("#stop-recording").hide();
@@ -84,8 +84,8 @@ $(document).ready(function () {
   $("#login").hide();
   $("#landing_page").hide();
   $("#chat").hide();
-  $("#knowledge_source").hide();
-  $("#chat-video").show();
+  $("#knowledge_source").show();
+  $("#chat-video").hide();
   playIdleVideo();
 });
 
@@ -225,7 +225,7 @@ function startTextChat() {
   const answerHtml = `
         <div class="container-chatgpt">
            <img src="images/Avatar3.png" alt="ChatGPT Avatar" class="user-avatar" />
-          <p class="pt-2 texxtt custom-container-user containeerr gptanswer${uid}"></p>
+          <p class="pt-2 text gptanswer${uid}"></p>
         </div>
         `;
   $(".answers").append(answerHtml);
@@ -281,7 +281,8 @@ function sendMessage() {
     chatType: chatType,
   };
   const questionHtml = `<div class="container-user" >
-          <div class="pt-2 texxxttt custom-container-userrr">${$(
+          <img src="images/avatar3.png" alt="Avatar" class="user-avatar" />
+          <div class="pt-2 texxtt custom-container-user containeerr" >${$(
             "#question"
           ).val()}</div>
         </div>`;
@@ -308,8 +309,7 @@ function sendMessage() {
         uid = Date.now();
         const answerHtml = `
         <div class="container-chatgpt">
-          <img src="images/Avatar3.png" alt="ChatGPT Avatar" class="user-avatar">
-          <div class="pt-2 texxtt custom-container-user containeerr  gptanswer${uid}"></div>
+          <div class="pt-2 text gptanswer${uid} texxxttt custom-container-userrr"></div>
         </div>
         `;
         $(".answers").append(answerHtml);
