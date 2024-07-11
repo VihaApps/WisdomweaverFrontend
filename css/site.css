@@ -142,7 +142,6 @@ body {
   transition: color 0.3s;
 }
 
-
 #rcorners3 {
   height: 105px;
   width: 105px;
@@ -171,29 +170,6 @@ body {
   text-decoration: none;
   transition: color 0.3s;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 .productImg {
   margin-top: 100px;
@@ -439,9 +415,8 @@ body {
   display: flex;
   justify-content: center;
   justify-items: center;
-  margin-top: 10px
+  margin-top: 10px;
 }
-
 
 .dropdown-toggle {
   cursor: pointer;
@@ -625,11 +600,11 @@ body {
   background-color: #fff;
   background-clip: padding-box;
   border: 1px solid #ced4da;
-  border-radius:12px 12px 12px 12px !important;
+  border-radius: 12px 12px 12px 12px !important;
   transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
 
-.password1{
+.password1 {
   display: block;
   width: 200%;
   height: calc(1.5em + 0.75rem + 2px);
@@ -641,7 +616,7 @@ body {
   background-color: #fff;
   background-clip: padding-box;
   border: 1px solid #ced4da;
-  border-radius:12px 12px 12px 12px !important;
+  border-radius: 12px 12px 12px 12px !important;
   transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
 
@@ -830,7 +805,7 @@ textarea.form-control {
 }
 .texxtt {
   margin-top: 0px;
-  margin-left: 20px;
+  /* margin-left: 20px; */
   /* margin-left: 90px; */
   background-color: rgba(128, 128, 128, 0.199);
   border-radius: 25px 25px 25px 0px;
@@ -850,7 +825,6 @@ textarea.form-control {
   background-color: none!;
   color: rgb(3 3 5) !important;
   display: inline;
-  
 }
 
 .texxxttt {
@@ -995,7 +969,6 @@ textarea.form-control {
   margin-left: 165px;
 }
 
-
 .videochat {
   height: 600px;
   width: 100px;
@@ -1103,7 +1076,7 @@ textarea.form-control {
   cursor: pointer;
   /* margin-top: 40px;
   margin-bottom: 70px;*/
-  margin-left: 5px; 
+  margin-left: 5px;
   margin-right: 10px;
   border-radius: 50px;
   border-color: #000000;
@@ -1125,11 +1098,10 @@ textarea.form-control {
   resize: none; /* Prevent resizing */
 }
 
-#message-video-section-send-button, #refresh-button {
+#message-video-section-send-button,
+#refresh-button {
   flex-shrink: 0; /* Do not shrink */
 }
-
-
 
 /* Media Queries for Responsiveness */
 
@@ -1207,7 +1179,6 @@ textarea.form-control {
     margin-bottom: 50px;
   }
 }
-
 
 /* -----------------------END PAGE 5 VIDEO CHAT ------------------------------------- */
 
