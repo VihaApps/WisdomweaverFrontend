@@ -280,7 +280,7 @@ function sendMessage() {
     sessionId: uniqueSessionId,
     chatType: chatType,
   };
-  const questionHtml = `<div class="container-user" >
+  const questionHtml = `<div class="container-user12" >
           <div class="pt-2 texxxttt custom-container-userrr containeerr" >${$(
             "#question"
           ).val()}</div>
@@ -336,9 +336,11 @@ function sendMessageKS() {
     sessionId: uniqueSessionId,
     chatType: chatType,
   };
-  const questionHtml = `<div class="container-user">
-          <img src="images/avatar.png" alt="Avatar" class="user-avatar" />
-          <p class="pt-2 text">${$("#question_ks").val()}</p>
+  const questionHtml = `<div class="container-user ">
+          <img src="images/Avatar3.png" alt="Avatar" class="user-avatar" />
+                    <div class="pt-2   gptanswer${uid}"></div>
+
+          <p class="pt-2 text textknowledge custom-konwledge-user containeerr">${$("#question_ks").val()}</p>
         </div>`;
   $(".answer_ks").append(questionHtml);
   $(".answer_ks").animate({ scrollTop: $(".answer_ks")[0].scrollHeight }, 1000);
@@ -365,7 +367,7 @@ function sendMessageKS() {
         uid = Date.now();
         const answerHtml = `
         <div class="container-chatgpt">
-          // <img src="images/chatgpt.png" alt="ChatGPT Avatar" class="user-avatar" />
+          <img src="images/chatgpt.png" alt="ChatGPT Avatar" class="user-avatar" />
           <p class="pt-2 text gptanswer${uid}"></p>
           <p class="pt-2 source_ks${uid}"></p>
         </div>

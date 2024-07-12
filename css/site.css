@@ -13,8 +13,13 @@ body {
 }
 
 /* Jay Css */
+
+.nav1{
+  padding-left: 0px;
+  padding-right: 0px;
+}
 .loginuser {
-  margin-top: 20px;
+  margin-top: 2px;
 }
 
 .backgroundimg {
@@ -111,6 +116,8 @@ body {
   gap: 1rem;
   margin-bottom: 15px;
   margin-right: 34px;
+  cursor: pointer;
+
 }
 
 #rcorners2 {
@@ -630,7 +637,7 @@ body {
   height: 100%;
   border-radius: 20px;
   background-color: #666666 !important;
-  color: #fff;
+  color: #ffffff !important;
   margin-bottom: 25px;
 }
 
@@ -711,6 +718,18 @@ body {
   justify-content: space-between;
   flex-direction: column;
 }
+.mytextboxknowledge {
+  background-color: #ffffff;
+  width: 120%;
+  height: 100%;
+  border-radius: 5%;
+  margin-top: 45px;
+  overflow: hidden;
+  /* display: flex; */
+  justify-content: space-between;
+  flex-direction: column;
+}
+
 .para11 {
   color: #bfc0c1;
   align-items: center;
@@ -719,7 +738,7 @@ body {
 .h1111 {
   /* background: fixed; */
   /* box-shadow: 2px 5px #bdbdbd17; */
-  box-shadow: 1px 20px 25px 20px#4e4d4d13;
+  /* box-shadow: 1px 20px 25px 20px#4e4d4d13; */
   /* background-color: rgb(250, 250, 250);  */
   height: 84px;
   border-radius: 2px;
@@ -740,7 +759,7 @@ body {
 }
 
 .minichet1 {
-  margin-left: 50px;
+  margin-left: 70px;
   width: 514px;
   height: 100px;
   background: #ddddddbe;
@@ -772,6 +791,26 @@ textarea.form-control {
   border-radius: 50px;
   font-size: large;
 }
+.butto0nnknowledge {
+  height: 39px;
+  width: 119px;
+  background-color: #000000;
+  border: none;
+  color: white;
+  /* padding: 10px 50px; */
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  margin-top: 40px;
+  margin-bottom: 70px;
+  margin-left: 305px;
+  border-radius: 50px;
+  font-size: large;
+}
+
 .butto0n {
   height: 39px;
   width: 100px;
@@ -818,6 +857,21 @@ textarea.form-control {
   padding: 10px;
 }
 
+.textknowledge {
+  margin-top: 0px;
+  /* margin-left: 20px; */
+  /* margin-left: 90px; */
+  background-color: rgba(128, 128, 128, 0.199);
+  border-radius: 25px 25px 25px 0px;
+  width: fit-content;
+  max-width: 80%;
+  word-wrap: break-word;
+  /* height: fit-content; */
+  word-break: break-word;
+  /* position: relative; */
+  padding: 10px;
+}
+
 .custom-container-user {
   padding: 20px;
   /* clear: both; */
@@ -826,6 +880,15 @@ textarea.form-control {
   color: rgb(3 3 5) !important;
   display: inline;
 }
+.custom-konwledge-user {
+  padding: 20px;
+  /* clear: both; */
+  /* background-color: rgb(202, 202, 202) !important; */
+  background-color: none!;
+  color: rgb(3 3 5) !important;
+  display: inline;
+}
+
 
 .texxxttt {
   margin-top: 0px;
@@ -970,6 +1033,7 @@ textarea.form-control {
 }
 
 .videochat {
+  
   height: 600px;
   width: 100px;
   overflow-y: auto;
@@ -982,6 +1046,9 @@ textarea.form-control {
   flex-direction: column;
 }
 .answers-video {
+  scrollbar-width: auto;
+scrollbar-width: thin;
+scrollbar-width: none;
   flex: 1;
   overflow-y: auto;
 }
@@ -1254,6 +1321,18 @@ footer {
 }
 
 .container-user {
+  /* flex-direction: row-reverse; */
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  /* clear: both; */
+  /* background-color: rgba(52, 53, 65, 1); */
+  color: rgba(236, 236, 241, 1);
+}
+
+.container-user12 {
+  flex-direction: row-reverse;
   width: 100%;
   display: flex;
   align-items: center;
@@ -1264,6 +1343,9 @@ footer {
 }
 
 .answers {
+  scrollbar-width: auto;
+scrollbar-width: thin;
+scrollbar-width: none;
   height: 270px; /* Set the height of your chatbox */
   overflow-y: scroll; /* Enable vertical scrollbar */
   overflow-x: hidden; /* Enable vertical scrollbar */

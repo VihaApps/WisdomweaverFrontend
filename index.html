@@ -96,8 +96,8 @@
       <div class="col-lg-7">
         <div class="row">
           <div class="loginuser ">
-            <a class="navbar-brand mb-2" href="#">
-              <img src="/images/userlogo.png" alt="" class="src" style="height: 40px;">
+            <a class="navbar-brand mb-2" href="#" style="margin-right: 0rem;">
+              <img src="/images/userlogo.png" alt="" class="src" style="height: 40px;margin-left: 5px;">
             </a>
 
             <div class="dropdown mb-2">
@@ -175,7 +175,7 @@
           <div class="col-lg-6 loginRegister ">
             <!-- Login-Register -->
             <!-- <button class="btn btn-primary" onclick="signIn();">Login</button> -->
-            <a href="login" onclick="signIn();" class="alink1 mt-1">Logout</a>
+            <a onclick="logout();" class="alink1 mt-1">Logout</a>
             <button class="btnSignup">
               <a href="register" onclick="register();" class="alink2">Sign Up</a>
             </button>
@@ -214,7 +214,7 @@
   <!------------------------ START PAGE 2-------------------------------------------------->
 
 
-  <div id="options_page" class="container-fluid">
+  <div id="options_page" class="container-fluid nav1" >
 
     <!-- NAV BAR START---------------------------------------------------------------------------------------------- -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light ">
@@ -246,8 +246,8 @@
             Use Cases
           </a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdownUseCases">
-            <a class="dropdown-item" href="#">Use Case1</a>
-            <a class="dropdown-item" href="#">User Case2</a>
+            <a class="dropdown-item" href="#">Use Case 1</a>
+            <a class="dropdown-item" href="#">Use Case 2</a>
             <!-- <div class="dropdown-divider"></div>
             <a class="dropdown-item" href="#">Something else here</a>
           </div> -->
@@ -259,16 +259,16 @@
             Resources
           </a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdownResources">
-            <a class="dropdown-item" href="#">Resource1</a>
-            <a class="dropdown-item" href="#">Resource2</a>
+            <a class="dropdown-item" href="#">Resource 1</a>
+            <a class="dropdown-item" href="#">Resource 2</a>
             <!-- <div class="dropdown-divider"></div>
             <a class="dropdown-item" href="#">Something else here</a>
           </div> -->
         </li>
       </ul>
-      <a href="login" onclick="signIn();" class="alink3 mt-2 mr-4 mb-2">Logout</a>
+      <a  onclick="logout();;" class="alink3 mt-2 mr-4 mb-2">Logout</a>
       <button class="btnSignup1">
-        <a href="register" onclick="register();" class="alink4 mb-1">Sign Up</a>
+        <a href="register" onclick="register(); " class="alink4 mb-1">Sign Up</a>
       </button>
       <!-- </div> -->
     </nav>
@@ -331,8 +331,8 @@
             </ul>
           </div>
           <div class="row">
-            <p class="para2" onclick="options_page_click('knowledge_source')" style="margin-left: 100px;cursor: pointer;">
-              Access Knowledge
+            <p class="para2" onclick="options_page_click('knowledge_source')" style="margin-left: 110px;cursor: pointer; margin-top: 0px;">
+              Access Knowledge Source
             </p>
           </div>
           <!-- <div>
@@ -353,7 +353,7 @@
 
   <!------------------------ START PAGE 3-------------------------------------------------->
 
-  <div id="choose_avatar" class="container-fluid">
+  <div id="choose_avatar" class="container-fluid nav1" >
 
     <!-- NAV BAR START---------------------------------------------------------------------------------------------- -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light ">
@@ -385,8 +385,8 @@
             Use Cases
           </a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdownUseCases">
-            <a class="dropdown-item" href="#">Use Case1</a>
-            <a class="dropdown-item" href="#">User Case2</a>
+            <a class="dropdown-item" href="#">Use Case 1</a>
+            <a class="dropdown-item" href="#">Use Case 2</a>
             <!-- <div class="dropdown-divider"></div>
           <a class="dropdown-item" href="#">Something else here</a>
         </div> -->
@@ -398,14 +398,14 @@
             Resources
           </a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdownResources">
-            <a class="dropdown-item" href="#">Resource1</a>
-            <a class="dropdown-item" href="#">Resource2</a>
+            <a class="dropdown-item" href="#">Resource 1</a>
+            <a class="dropdown-item" href="#">Resource 2</a>
             <!-- <div class="dropdown-divider"></div>
           <a class="dropdown-item" href="#">Something else here</a>
         </div> -->
         </li>
       </ul>
-      <a href="login" onclick="signIn();" class="alink3 mt-2 mr-4 mb-2">Logout</a>
+      <a  onclick="logout();" class="alink3 mt-2 mr-4 mb-2">Logout</a>
       <button class="btnSignup1">
         <a href="register" onclick="register();" class="alink4 mb-1">Sign Up</a>
       </button>
@@ -426,7 +426,7 @@
 
             <h6><span class="mainpara2">Little Description here</span></h6>
           </div>
-          <div class="container" style="display: flex; justify-content: center; ">
+          <div class="container" style="display: flex; justify-content: center; cursor: pointer; ">
             <div class="avatar-wrapper">
               <img src="/images/avatar3.png" alt="Avatar" class="imggg" onclick="choose_avatar_page_click('male')">
               <h4>Jane</h4>
@@ -460,7 +460,7 @@
   <!----------------------------End Of Page 3-------------------->
 
   <!------------------------------------------- START PAGE 4 ------------------------>
-  <div id="chat" class="container-fluid">
+  <div id="chat" class="container-fluid nav1" >
 
     <!-- NAV BAR START---------------------------------------------------------------------------------------------- -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light ">
@@ -492,8 +492,8 @@
             Use Cases
           </a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdownUseCases">
-            <a class="dropdown-item" href="#">Use Case1</a>
-            <a class="dropdown-item" href="#">User Case2</a>
+            <a class="dropdown-item" href="#">Use Case 1</a>
+            <a class="dropdown-item" href="#">Use Case 2</a>
             <!-- <div class="dropdown-divider"></div>
               <a class="dropdown-item" href="#">Something else here</a>
             </div> -->
@@ -505,14 +505,14 @@
             Resources
           </a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdownResources">
-            <a class="dropdown-item" href="#">Resource1</a>
-            <a class="dropdown-item" href="#">Resource2</a>
+            <a class="dropdown-item" href="#">Resource 1</a>
+            <a class="dropdown-item" href="#">Resource 2</a>
             <!-- <div class="dropdown-divider"></div>
               <a class="dropdown-item" href="#">Something else here</a>
             </div> -->
         </li>
       </ul>
-      <a href="login" onclick="signIn();" class="alink3 mt-2 mr-4 mb-2">Logout</a>
+      <a  onclick="signIn();" class="alink3 mt-2 mr-4 mb-2">Logout</a>
       <button class="btnSignup1">
         <a href="register" onclick="register();" class="alink4 mb-1">Sign Up</a>
       </button>
@@ -553,8 +553,7 @@
             </div>
           </div>
           <div class="row" style="margin-top: -45px;">
-            <button class="butto0nn" id="send-button" onclick="sendMessage(); "
-              style="margin-bottom: 50px;">Send</button>
+            <button class="butto0nn" id="send-button" onclick="sendMessage(); " style="margin-bottom: 50px;">Send</button>
             <button class="butto0n" id="refresh-button" onclick="resetChat();">Reset</button>
           </div>
         </div>
@@ -566,7 +565,7 @@
 
   <!------------------------------------------------------------------- START PAGE 5 VIDEO CHAT------------------ -->
 
-  <div id="chat-video" class="container-fluid">
+  <div id="chat-video" class="container-fluid nav1" >
     <!-- NAV BAR START---------------------------------------------------------------------------------------------- -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light ">
       <a class="navbar-brand mb-2" href="#">
@@ -597,8 +596,8 @@
             Use Cases
           </a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdownUseCases">
-            <a class="dropdown-item" href="#">Use Case1</a>
-            <a class="dropdown-item" href="#">User Case2</a>
+            <a class="dropdown-item" href="#">Use Case 1</a>
+            <a class="dropdown-item" href="#">Use Case 2</a>
             <!-- <div class="dropdown-divider"></div>
               <a class="dropdown-item" href="#">Something else here</a>
             </div> -->
@@ -610,14 +609,14 @@
             Resources
           </a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdownResources">
-            <a class="dropdown-item" href="#">Resource1</a>
-            <a class="dropdown-item" href="#">Resource2</a>
+            <a class="dropdown-item" href="#">Resource 1</a>
+            <a class="dropdown-item" href="#">Resource 2</a>
             <!-- <div class="dropdown-divider"></div>
               <a class="dropdown-item" href="#">Something else here</a>
             </div> -->
         </li>
       </ul>
-      <a href="login" onclick="signIn();" class="alink3 mt-2 mr-4 mb-2">Logout</a>
+      <a onclick="signIn();" class="alink3 mt-2 mr-4 mb-2">Logout</a>
       <button class="btnSignup1">
         <a href="register" onclick="register();" class="alink4 mb-1">Sign Up</a>
       </button>
@@ -734,19 +733,54 @@
 
   <!------------------------------------------------------------------- END PAGE 5 VIDEO CHAT------------------ -->
 
-  <div id="knowledge_source" class="row container-fluid">
-    <div class="answer_ks" style="height: calc(100vh - 210px); overflow-y: auto"></div>
-    <div class="row message_ks">
+
+
+  <!-- -----------------Knowledge_source------------------------------------------------------------- -->
+
+
+  <div id="knowledge_source" class="row container-fluid nav1" >
+    <!-- <div class="answer_ks" ></div> -->
+    <!-- <div class="row message_ks">
+      
       <div class="col-md-11">
         <textarea id="question_ks" rows="2" placeholder="Send a message." class="form-control"></textarea>
       </div>
+
       <div class="col-md-1 mt-2">
         <button id="send-button" class="send-button-ks btn btn-primary w-100" onclick="sendMessageKS();">
           Send
         </button>
         <div class="dot-flashing mt-3" style="background-color: white"></div>
       </div>
+    </div> -->
+
+    <div class="container">
+      <div class="mytextboxknowledge">
+        <div class="row">
+          <span class="para11" style="align-items: center;">
+            <h1 class=" h1111">
+              Access<b class="bb"> Knowledge Source</b></h1>
+          </span>
+
+        </div>
+        <div class="answers  answer_ks" style="height: 280px;">
+          <!-- Chet Box -->
+        </div>
+        <div class=" container">
+          <div class="row minichet1">
+            <textarea id="question_ks" rows="2" placeholder="Send a message." class="form-control "></textarea>
+            <!-- <textarea id="question" rows="2" placeholder="Send a message." class="form-control msgtxt"></textarea> -->
+
+          </div>
+        </div>
+        <div class="row" style="margin-top: -45px;">
+          <button class="butto0nnknowledge" id="send-button" onclick="sendMessageKS(); "
+            style="margin-bottom: 80px;">Send</button>
+          <!-- <button class="butto0n" id="refresh-button" onclick="resetChat();">Reset</button> -->
+        </div>
+      </div>
     </div>
+     
   </div>
   <div id="train-model" class="container-fluid">
     <h1 class="h3 mb-3 fw-normal">Wisdom Weaver</h1>
@@ -800,7 +834,7 @@
       </div>
     </div>
   </div>
-
+<!----------------------------------------------------------------END OF KNOLEDGE----------------------------------------  -->
   <footer class="footer mt-auto py-2 bg-body-tertiary">
     <div class="container">
       <div></div>
