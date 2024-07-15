@@ -839,13 +839,13 @@ textarea.form-control {
   /* padding: 10px 50px; */
   text-align: center;
   text-decoration: none;
-  display: inline-block;
+  /* display: inline-block; */
   font-size: 16px;
-  margin: 4px 2px;
+  /* margin: 4px 2px; */
   cursor: pointer;
-  margin-top: 40px;
+  /* margin-top: 40px; */
   margin-bottom: 70px;
-  margin-left: 305px;
+  margin-left: 130px !important;
   border-radius: 50px;
   font-size: large;
 }
@@ -900,8 +900,9 @@ textarea.form-control {
   margin-top: 0px;
   /* margin-left: 20px; */
   /* margin-left: 90px; */
-  background-color: rgba(128, 128, 128, 0.199);
-  border-radius: 25px 25px 25px 0px;
+  background-color:#0379db;
+  /* background-color: rgba(128, 128, 128, 0.199); */
+  border-radius: 25px 25px 0px 25px;
   width: fit-content;
   max-width: 80%;
   word-wrap: break-word;
@@ -909,22 +910,39 @@ textarea.form-control {
   word-break: break-word;
   /* position: relative; */
   padding: 10px;
+
+  
+}
+
+.text123{
+    background-color: rgba(128, 128, 128, 0.199);
+    margin-top: 0px;
+    margin-left: 90px;
+    border-radius: 25px 25px 25px 0px;
+    width: fit-content;
+    max-width: 80%;
+    word-wrap: break-word;
+    /* height: fit-content; */
+    word-break: break-word;
+    /* position: relative; */
+    padding: 10px;
 }
 
 .custom-container-user {
-  padding: 20px;
+  margin-left: 90px;
+  /* padding: 20px; */
   /* clear: both; */
   /* background-color: rgb(202, 202, 202) !important; */
   background-color: none!;
   color: rgb(3 3 5) !important;
-  display: inline;
+  /* display: inline; */
 }
 .custom-konwledge-user {
   padding: 20px;
   /* clear: both; */
   /* background-color: rgb(202, 202, 202) !important; */
   background-color: none!;
-  color: rgb(3 3 5) !important;
+  color: white !important;
   display: inline;
 }
 
@@ -1073,7 +1091,7 @@ textarea.form-control {
 .videochat {
   height: 620px;
   width: 100px;
-  overflow-y: auto;
+  overflow-y:auto;
   background-color: #fdffff;
   border-radius: 50px;
   margin-top: 80px;
@@ -1360,6 +1378,16 @@ footer {
 
 .container-user {
   /* flex-direction: row-reverse; */
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  /* clear: both; */
+  /* background-color: rgba(52, 53, 65, 1); */
+  color: rgba(236, 236, 241, 1);
+}
+.container-user13 {
+  flex-direction: row-reverse;
   width: 100%;
   display: flex;
   align-items: center;

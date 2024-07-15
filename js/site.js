@@ -337,12 +337,12 @@ function sendMessageKS() {
     sessionId: uniqueSessionId,
     chatType: chatType,
   };
-  const questionHtml = `<div class="container-user ">
-          <img src="images/Avatar3.png" alt="Avatar" class="user-avatar" />
+  const questionHtml = `<div class="container-user13 ">
                     <div class="pt-2   gptanswer${uid}"></div>
 
           <p class="pt-2 text textknowledge custom-konwledge-user containeerr">${$(
             "#question_ks"
+            
           ).val()}</p>
         </div>`;
   $(".answer_ks").append(questionHtml);
@@ -389,8 +389,8 @@ function sendMessageKS() {
       uid = Date.now();
       const answerHtml = `
         <div class="container-chatgpt">
-          <img src="images/chatgpt.png" alt="ChatGPT Avatar" class="user-avatar" />
-          <p class="pt-2 text gptanswer${uid}">An error has occured</p>
+          <img src="images/Avatar3.png" alt="ChatGPT Avatar" class="user-avatar" />
+          <p class="pt-2 text123 gptanswer${uid}">An error has occured</p>
           <p class="pt-2 source_ks${uid}"></p>
         </div>
         `;
@@ -508,10 +508,11 @@ function typeWriter() {
     $(".answers").animate({ scrollTop: $(".answers")[0].scrollHeight }, 0);
     $(".answer_ks").animate({ scrollTop: $(".answer_ks")[0].scrollHeight }, 0);
     $(`.gptanswer${uid}`).html($(`.gptanswer${uid}`).html() + txt.charAt(i));
-    $(".answers-video").animate(
-      { scrollTop: $(".answers-video")[0].scrollHeight },
-      1000
-    );
+    //TBD
+    // $(".answers-video").animate(
+    //   { scrollTop: $(".answers-video")[0].scrollHeight },
+    //   1000
+    // );
     i++;
     setTimeout(typeWriter, speed);
   } else {
