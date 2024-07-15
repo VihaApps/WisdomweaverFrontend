@@ -212,9 +212,9 @@ async function choose_avatar_page_click(gender) {
   $("#choose_avatar").hide();
   $("#stop-recording").hide();
   $.blockUI();
-  // await connect();
-  // await initChat();
-  playIdleVideo();
+  await connect();
+  await initChat();
+  // playIdleVideo();
   $.unblockUI();
 }
 
@@ -341,7 +341,9 @@ function sendMessageKS() {
           <img src="images/Avatar3.png" alt="Avatar" class="user-avatar" />
                     <div class="pt-2   gptanswer${uid}"></div>
 
-          <p class="pt-2 text textknowledge custom-konwledge-user containeerr">${$("#question_ks").val()}</p>
+          <p class="pt-2 text textknowledge custom-konwledge-user containeerr">${$(
+            "#question_ks"
+          ).val()}</p>
         </div>`;
   $(".answer_ks").append(questionHtml);
   $(".answer_ks").animate({ scrollTop: $(".answer_ks")[0].scrollHeight }, 1000);
