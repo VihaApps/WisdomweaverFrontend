@@ -46,17 +46,17 @@ $(document).ready(function () {
     $("#landing_page").show();
 
     $("#login").hide();
-    $("#train-model").hide();
+    $("#train-model").show();
     $("#model-audio").hide();
     $("#model-pdf").hide();
     $("#chat").show();
     $("#chat-video").show();
     $("#options_page").hide();
     $("#choose_avatar").hide();
-    $("#knowledge_source").show();
+    $("#knowledge_source").hide();
     initialize();
   } else {
-    $("#train-model").hide();
+    $("#train-model").show();
     $("#navigation").hide();
     $("#model-audio").hide();
     $("#model-pdf").hide();
@@ -65,7 +65,7 @@ $(document).ready(function () {
     $("#landing_page").hide();
     $("#options_page").hide();
     $("#choose_avatar").hide();
-    $("#knowledge_source").show();
+    $("#knowledge_source").hide();
     $("#login").show();
   }
   $("#stop-recording").hide();
@@ -84,8 +84,9 @@ $(document).ready(function () {
   $("#login").hide();
   $("#landing_page").hide();
   $("#chat").hide();
-  $("#knowledge_source").show();
-  $("#chat-video").hide();
+  $("#knowledge_source").hide();
+  $("#chat-video").show();
+  $("#train-model").hide();
   playIdleVideo();
 });
 

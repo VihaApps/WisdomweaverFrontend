@@ -214,7 +214,7 @@
   <!------------------------ START PAGE 2-------------------------------------------------->
 
 
-  <div id="options_page" class="container-fluid nav1" >
+  <div id="options_page" class="container-fluid nav1">
 
     <!-- NAV BAR START---------------------------------------------------------------------------------------------- -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light ">
@@ -222,7 +222,7 @@
         <img src="/images/userlogo.png" alt="" class="src" style="height: 40px;">
       </a>
 
-      <div class="dropdown mb-2" style="margin-left: 10px;">
+      <div class="dropdown mb-2" style="margin-left: -10px;">
         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownWelcome" role="button" data-bs-toggle="dropdown"
           aria-expanded="false" aria-expanded="false">
           Welcome User
@@ -266,7 +266,7 @@
           </div> -->
         </li>
       </ul>
-      <a  onclick="logout();;" class="alink3 mt-2 mr-4 mb-2">Logout</a>
+      <a onclick="logout();;" class="alink3 mt-2 mr-4 mb-2">Logout</a>
       <button class="btnSignup1">
         <a href="register" onclick="register(); " class="alink4 mb-1">Sign Up</a>
       </button>
@@ -290,10 +290,10 @@
               <br>tempor incididunt ut labore et dolore magna aliqua.
             </p>
           </div>
-          <div class="roundHeading" onclick="options_page_click('offboarding')">
+          <div class="roundHeading">
             <ul class="ulRoundItem">
               <li>
-                <div id="rcorners2"><a> Offboarding </a></div>
+                <div id="rcorners2" onclick="options_page_click('offboarding')"><a> Offboarding </a></div>
               </li>
               <!-- <li>
                 <div id="rcorners2"><a onclick="options_page_click('knowledge_source')"> Access Knowledge Source</a>
@@ -331,7 +331,8 @@
             </ul>
           </div>
           <div class="row">
-            <p class="para2" onclick="options_page_click('knowledge_source')" style="margin-left: 110px;cursor: pointer; margin-top: 0px;">
+            <p class="para3" onclick="options_page_click('knowledge_source')"
+              style="margin-left: 110px;cursor: pointer; margin-top: 0px;">
               Access Knowledge Source
             </p>
           </div>
@@ -353,7 +354,7 @@
 
   <!------------------------ START PAGE 3-------------------------------------------------->
 
-  <div id="choose_avatar" class="container-fluid nav1" >
+  <div id="choose_avatar" class="container-fluid nav1">
 
     <!-- NAV BAR START---------------------------------------------------------------------------------------------- -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light ">
@@ -361,7 +362,7 @@
         <img src="/images/userlogo.png" alt="" class="src" style="height: 40px;">
       </a>
 
-      <div class="dropdown mb-2" style="margin-left: 10px;">
+      <div class="dropdown mb-2" style="margin-left: -10px;">
         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownWelcome" role="button" data-bs-toggle="dropdown"
           aria-expanded="false" aria-expanded="false">
           Welcome User
@@ -405,7 +406,7 @@
         </div> -->
         </li>
       </ul>
-      <a  onclick="logout();" class="alink3 mt-2 mr-4 mb-2">Logout</a>
+      <a onclick="logout();" class="alink3 mt-2 mr-4 mb-2">Logout</a>
       <button class="btnSignup1">
         <a href="register" onclick="register();" class="alink4 mb-1">Sign Up</a>
       </button>
@@ -460,7 +461,7 @@
   <!----------------------------End Of Page 3-------------------->
 
   <!------------------------------------------- START PAGE 4 ------------------------>
-  <div id="chat" class="container-fluid nav1" >
+  <div id="chat" class="container-fluid nav1">
 
     <!-- NAV BAR START---------------------------------------------------------------------------------------------- -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light ">
@@ -468,7 +469,7 @@
         <img src="/images/userlogo.png" alt="" class="src" style="height: 40px;">
       </a>
 
-      <div class="dropdown mb-2" style="margin-left: 10px;">
+      <div class="dropdown mb-2" style="margin-left: -10px;">
         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownWelcome" role="button" data-bs-toggle="dropdown"
           aria-expanded="false" aria-expanded="false">
           Welcome User
@@ -512,7 +513,7 @@
             </div> -->
         </li>
       </ul>
-      <a  onclick="signIn();" class="alink3 mt-2 mr-4 mb-2">Logout</a>
+      <a onclick="signIn();" class="alink3 mt-2 mr-4 mb-2">Logout</a>
       <button class="btnSignup1">
         <a href="register" onclick="register();" class="alink4 mb-1">Sign Up</a>
       </button>
@@ -553,7 +554,8 @@
             </div>
           </div>
           <div class="row" style="margin-top: -45px;">
-            <button class="butto0nn" id="send-button" onclick="sendMessage(); " style="margin-bottom: 50px;">Send</button>
+            <button class="butto0nn" id="send-button" onclick="sendMessage(); "
+              style="margin-bottom: 50px;">Send</button>
             <button class="butto0n" id="refresh-button" onclick="resetChat();">Reset</button>
           </div>
         </div>
@@ -565,14 +567,14 @@
 
   <!------------------------------------------------------------------- START PAGE 5 VIDEO CHAT------------------ -->
 
-  <div id="chat-video" class="container-fluid nav1" >
+  <div id="chat-video" class="container-fluid nav1">
     <!-- NAV BAR START---------------------------------------------------------------------------------------------- -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light ">
       <a class="navbar-brand mb-2" href="#">
         <img src="/images/userlogo.png" alt="" class="src" style="height: 40px;">
       </a>
 
-      <div class="dropdown mb-2" style="margin-left: 10px;">
+      <div class="dropdown mb-2" style="margin-left: -10px;">
         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownWelcome" role="button" data-bs-toggle="dropdown"
           aria-expanded="false" aria-expanded="false">
           Welcome User
@@ -718,11 +720,13 @@
             <div class="minichet" id="section-question-video">
               <textarea id="question-video" rows="2" placeholder="Send a message."
                 class="form-control fixed-textarea"></textarea>
-              <button id="message-video-section-send-button" class=" butto0nn11"
-                onclick="sendMessageVideo();">Send</button>
-              <button id="refresh-button" class="butto0n11" onclick="resetChatVideo()">Reset</button>
             </div>
             <div class="dot-flashing mt-3" style="background-color: rgb(255, 255, 255)"></div>
+          </div>
+          <div class="row" style="margin-left: 80px;margin-bottom: 50px;gap: 1rem;">
+            <button id="message-video-section-send-button" class=" butto0nn11"
+              onclick="sendMessageVideo();">Send</button>
+            <button id="refresh-button" class="butto0n11" onclick="resetChatVideo()">Reset</button>
           </div>
         </div>
       </div>
@@ -738,7 +742,7 @@
   <!-- -----------------Knowledge_source------------------------------------------------------------- -->
 
 
-  <div id="knowledge_source" class="row container-fluid nav1" >
+  <div id="knowledge_source" class="row container-fluid nav1">
     <!-- <div class="answer_ks" ></div> -->
     <!-- <div class="row message_ks">
       
@@ -767,7 +771,7 @@
           <!-- Chet Box -->
         </div>
         <div class=" container">
-          <div class="row minichet1">
+          <div class="row minichet2">
             <textarea id="question_ks" rows="2" placeholder="Send a message." class="form-control "></textarea>
             <!-- <textarea id="question" rows="2" placeholder="Send a message." class="form-control msgtxt"></textarea> -->
 
@@ -780,61 +784,128 @@
         </div>
       </div>
     </div>
-     
+
   </div>
-  <div id="train-model" class="container-fluid">
-    <h1 class="h3 mb-3 fw-normal">Wisdom Weaver</h1>
-    <h1 class="h4 mb-3 fw-normal">Ingest Information</h1>
-    <div class="row">
-      <div class="col-md-12 fw-normal mb-2">
-        How would you like to ingest information?
-      </div>
-      <div class="col-md-12">
-        <select class="form-select" onchange="typeChanged(this)">
-          <option value="1">Text</option>
-          <!-- <option value="2">PDF</option> -->
-          <!-- <option value="3">Audio</option> -->
-        </select>
-      </div>
-      <div class="col-md-12 mt-2">
-        <textarea id="model-text" rows="10" placeholder="Copy paste text to be trained here."
-          class="form-control"></textarea>
-        <input id="model-text-source" type="text" class="form-control col-6"
-          placeholder="Enter source without spaces" />
-        <input id="model-pdf" type="text" class="form-control col-6" placeholder="Enter pdf online link here" />
-        <div id="model-audio" class="text-center mt-2">
-          <button class="btn btn-primary" onclick="startRecording()">
-            Start Recording
-          </button>
-          <button class="btn btn-primary" onclick="stopRecording()" disabled>
-            Stop Recording
-          </button>
-          <div class="mt-2 mb-1">
-            <audio id="audioPlayer" controls preload="none"></audio>
-          </div>
-          <!-- <button class="btn btn-primary" onclick="uploadFile()">
-              Upload File
-            </button> -->
-          <button class="btn btn-primary" onclick="transcribe()" disabled>
-            Display Transcription
-          </button>
-          <button class="btn btn-primary" onclick="summarize()" disabled>
-            Display Recording Summary
-          </button>
-          <div class="mt-3">
-            <small>Powerered by BridgeAI</small>
-          </div>
+  <!-- -----------------END OF Knowledge_source------------------------------------------------------------- -->
+
+  <!-- ---------------------TRAIN-MODEL------------------------------------------------------------- -->
+  <div id="train-model" class="container-fluid nav1">
+    <!-- NAV BAR START---------------------------------------------------------------------------------------------- -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light  ">
+      <a class="navbar-brand mb-2" href="#">
+        <img src="/images/userlogo.png" alt="" class="src" style="height: 40px;">
+      </a>
+
+      <div class="dropdown mb-2" style="margin-left: -10px;">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownWelcome" role="button" data-bs-toggle="dropdown"
+          aria-expanded="false" aria-expanded="false">
+          Welcome User
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownWelcome">
+
+          <a class="dropdown-item" href="#"> Log Out</a>
         </div>
       </div>
-      <div class="col-md-12 mt-2 text-center main-buttons">
-        <button id="send-button" class="send-btn btn btn-primary text-center" onclick="startTraining();">
-          Ingest Information
-        </button>
-        <div class="dot-flashing mt-3" style="background-color: white"></div>
+
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- <div class="collapse navbar-collapse mb-2" id="navbarSupportedContent"> -->
+      <ul class="navbar-nav ml-auto" style="margin-top: 10px;">
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"
+            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Use Cases
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdownUseCases">
+            <a class="dropdown-item" href="#">Use Case 1</a>
+            <a class="dropdown-item" href="#">Use Case 2</a>
+            <!-- <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Something else here</a>
+          </div> -->
+        </li>
+        <li class="nav-item dropdown mb-2">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownResources" role="button"
+            data-bs-toggle="dropdown" aria-expanded="false" data-toggle="dropdown" aria-haspopup="true"
+            aria-expanded="false">
+            Resources
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdownResources">
+            <a class="dropdown-item" href="#">Resource 1</a>
+            <a class="dropdown-item" href="#">Resource 2</a>
+            <!-- <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Something else here</a>
+          </div> -->
+        </li>
+      </ul>
+      <a onclick="signIn();" class="alink3 mt-2 mr-4 mb-2">Logout</a>
+      <button class="btnSignup1">
+        <a href="register" onclick="register();" class="alink4 mb-1">Sign Up</a>
+      </button>
+      <!-- </div> -->
+    </nav>
+
+    <!-- ----------------------- END OF NAV BAR START---------------------------------------------------------------------------------------------- -->
+    <div class="container-fluid">
+      <!-- <h1 class="h3 mb-3 fw-normal mt-3 ingestText1">Wisdom Weaver</h1> -->
+      <h1 class="h4 mb-3 fw-normal ingestText1 mt-3">Ingest Information</h1>
+      <div class="row">
+        <div class="col-md-12 fw-normal mb-2 ingestText2">
+          How would you like to ingest information?
+        </div>
+        <div class="col-md-2">
+          <select class="form-select ingestDrop1" onchange="typeChanged(this)">
+            <option value="1">Text</option>
+            <!-- <option value="2">PDF</option> -->
+            <!-- <option value="3">Audio</option> -->
+          </select>
+        </div>
+        <div class="col-md-12 mt-2">
+          <textarea id="model-text" class="ingestTextArea1" rows="10" placeholder="Copy paste text to be trained here."
+            class="form-control"></textarea>
+          <input id="model-text-source" type="text" class="form-control col-6 ingestText3"
+            placeholder="Enter source without spaces" />
+          <input id="model-pdf" type="text" class="form-control col-6" placeholder="Enter pdf online link here" />
+          <button id="send-button" class="send-btn btn btn-primary text-center ingestText3 mt-3"
+            onclick="startTraining();">
+            Ingest Information
+          </button>
+          <div id="model-audio" class="text-center mt-2">
+            <button class="btn btn-primary" onclick="startRecording()">
+              Start Recording
+            </button>
+            <button class="btn btn-primary" onclick="stopRecording()" disabled>
+              Stop Recording
+            </button>
+            <div class="mt-2 mb-1">
+              <audio id="audioPlayer" controls preload="none"></audio>
+            </div>
+            <!-- <button class="btn btn-primary" onclick="uploadFile()">
+              Upload File
+            </button> -->
+            <button class=" btn-primary" onclick="transcribe()" disabled>
+              Display Transcription
+            </button>
+            <button class="btn btn-primary " onclick="summarize()" disabled>
+              Display Recording Summary
+            </button>
+            <div class="mt-3">
+              <small>Powerered by BridgeAI</small>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-12 mt-2 text-center main-buttons">
+
+          <div class="dot-flashing mt-3" style="background-color: white"></div>
+        </div>
       </div>
     </div>
   </div>
-<!----------------------------------------------------------------END OF KNOLEDGE----------------------------------------  -->
+  <!-- ---------------------END OF TRAIN-MODEL------------------------------------------------------------- -->
+
+
   <footer class="footer mt-auto py-2 bg-body-tertiary">
     <div class="container">
       <div></div>
