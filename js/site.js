@@ -290,8 +290,8 @@ function sendMessage() {
   $(".answers").append(questionHtml);
   $(".answers").animate({ scrollTop: $(".answers")[0].scrollHeight }, 1000);
   $("#question").val("");
-  $(".dot-flashing").show();
-  $("#send-button").hide();
+  $(".dot-flashing").hide();
+  $("#send-button").show();
   $.ajax({
     url: `${baseUrl}/chatbot`,
     type: "POST",
@@ -349,7 +349,7 @@ function sendMessageKS() {
   $(".answer_ks").append(questionHtml);
   $(".answer_ks").animate({ scrollTop: $(".answer_ks")[0].scrollHeight }, 1000);
   $("#question_ks").val("");
-  $(".dot-flashing").show();
+  $(".dot-flashing").hide();
   $(".send-button-ks").hide();
   // $(".send-button-ks").addClass("disabled");
 
@@ -402,6 +402,11 @@ function resetChat() {
 
 function initChat() {
   talk("What is your name?");
+  const questionHtml = `<div class="container-user">
+          <img src="images/Avatar3.png" alt="Avatar" class=" user-avatar1 user-avatar" />
+          <p class="pt-2 text quetxt que1">What is your name?</p>
+        </div>`;
+  $(".answers-video").append(questionHtml);
 }
 
 function sendMessageVideo() {
@@ -412,9 +417,9 @@ function sendMessageVideo() {
     sessionId: uniqueSessionId,
     chatType: chatType,
   };
-  const questionHtml = `<div class="container-user">
-          <img src="images/Avatar3.png" alt="Avatar" class=" user-avatar1 user-avatar" />
-          <p class="pt-2 text quetxt que1">${$("#question-video").val()}</p>
+  const questionHtml = `
+          <div class="container-chatgpt1 container-chatgpt">
+          <p class="pt-2 text custom-video1">${$("#question-video").val()}</p>
         </div>`;
   $(".answers-video").append(questionHtml);
   $(".answers-video").animate(
@@ -422,11 +427,11 @@ function sendMessageVideo() {
     1000
   );
   $("#question-video").val("");
-  $(".dot-flashing").show();
-  $("#section-question-video").block({
-    message: "<h4>Loading...</h4>",
-    css: { border: "3px solid gray" },
-  });
+  // $(".dot-flashing").hide();
+  // $("#section-question-video").block({
+  //   message: "<h4>Loading...</h4>",
+  //   css: { border: "3px solid gray" },
+  // });
   $("#start-recording").attr("disabled", "disabled");
   $("#start-recording").text("Processing...");
   $("#send-button").hide();
@@ -454,9 +459,9 @@ function sendMessageVideo() {
 
         uid = Date.now();
         const answerHtml = `
-        <div class="container-chatgpt1 container-chatgpt">
-          
-          <p class="pt-2 text gptanswer${uid}   custom-video1"></p>
+        <div class="container-user">
+          <img src="images/Avatar3.png" alt="Avatar" class=" user-avatar1 user-avatar" />
+          <p class="pt-2 text gptanswer${uid} quetxt que1"></p>
         </div>
         `;
         $(".answers-video").append(answerHtml);
@@ -495,6 +500,10 @@ function typeWriter() {
     $(".answers").animate({ scrollTop: $(".answers")[0].scrollHeight }, 0);
     $(".answer_ks").animate({ scrollTop: $(".answer_ks")[0].scrollHeight }, 0);
     $(`.gptanswer${uid}`).html($(`.gptanswer${uid}`).html() + txt.charAt(i));
+    $(".answers-video").animate(
+      { scrollTop: $(".answers-video")[0].scrollHeight },
+      1000
+    );
     i++;
     setTimeout(typeWriter, speed);
   } else {
