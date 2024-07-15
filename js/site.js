@@ -83,8 +83,8 @@ $(document).ready(function () {
   //Use this for development
   $("#login").hide();
   $("#landing_page").hide();
-  $("#chat").show();
-  $("#knowledge_source").hide();
+  $("#chat").hide();
+  $("#knowledge_source").show();
   $("#chat-video").hide();
   $("#train-model").hide();
   playIdleVideo();
@@ -386,8 +386,17 @@ function sendMessageKS() {
       }
     },
     error: function (request, status, error) {
+      uid = Date.now();
+      const answerHtml = `
+        <div class="container-chatgpt">
+          <img src="images/chatgpt.png" alt="ChatGPT Avatar" class="user-avatar" />
+          <p class="pt-2 text gptanswer${uid}">An error has occured</p>
+          <p class="pt-2 source_ks${uid}"></p>
+        </div>
+        `;
+      $(".answer_ks").append(answerHtml);
       $.unblockUI();
-      alert(request.responseText);
+      // alert(request.responseText);
     },
   });
 }
