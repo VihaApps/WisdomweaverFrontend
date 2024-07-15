@@ -79,15 +79,14 @@ $(document).ready(function () {
       $("#send-button").trigger("click");
     }
   });
-  //signIn();
 
   //Use this for development
-  // $("#login").hide();
-  // $("#landing_page").hide();
-  // $("#chat").hide();
-  // $("#knowledge_source").hide();
-  // $("#chat-video").hide();
-  // $("#train-model").hide();
+  $("#login").hide();
+  $("#landing_page").hide();
+  $("#chat").show();
+  $("#knowledge_source").hide();
+  $("#chat-video").hide();
+  $("#train-model").hide();
   playIdleVideo();
 });
 
