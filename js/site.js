@@ -46,22 +46,23 @@ $(document).ready(function () {
     $("#landing_page").show();
 
     $("#login").hide();
-    $("#train-model").show();
+    $("#train-model").hide();
     $("#model-audio").hide();
     $("#model-pdf").hide();
-    $("#chat").show();
-    $("#chat-video").show();
+    $("#chat").hide();
+    $("#chat-video").hide();
     $("#options_page").hide();
     $("#choose_avatar").hide();
     $("#knowledge_source").hide();
     initialize();
   } else {
-    $("#train-model").show();
+    $("footer").hide();
+    $("#train-model").hide();
     $("#navigation").hide();
     $("#model-audio").hide();
     $("#model-pdf").hide();
-    $("#chat").show();
-    $("#chat-video").show();
+    $("#chat").hide();
+    $("#chat-video").hide();
     $("#landing_page").hide();
     $("#options_page").hide();
     $("#choose_avatar").hide();
@@ -81,12 +82,12 @@ $(document).ready(function () {
   //signIn();
 
   //Use this for development
-  $("#login").hide();
-  $("#landing_page").hide();
-  $("#chat").hide();
-  $("#knowledge_source").hide();
-  $("#chat-video").show();
-  $("#train-model").hide();
+  // $("#login").hide();
+  // $("#landing_page").hide();
+  // $("#chat").hide();
+  // $("#knowledge_source").hide();
+  // $("#chat-video").hide();
+  // $("#train-model").hide();
   playIdleVideo();
 });
 
