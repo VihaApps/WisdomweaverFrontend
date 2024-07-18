@@ -749,7 +749,7 @@ body {
 }
 .mytextboxknowledge {
   background-color: #ffffff;
-  width: 120%;
+  width: 100%;
   height: 92%;
   border-radius: 5%;
   margin-top: 45px;
@@ -778,13 +778,14 @@ body {
 }
 
 .minichet {
-  margin-left: 70px;
-  width: 514px;
-  height: 100px;
+  width: 100%;
+  margin-left: 10px;
+  margin-right: 10px;
+  height: 75px;
   background: #ddddddbe;
   border-radius: 10px 10px;
   margin-top: 0px;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
 }
 
 .minichet1 {
@@ -798,13 +799,15 @@ body {
 }
 
 .minichet2 {
-  margin-left: 70px;
-  width: 514px;
+  /* margin-left: 70px;
+  width: 514px; */
   height: 100px;
   background: #ddddddbe;
   border-radius: 10px 10px;
   margin-top: 50px;
   margin-bottom: 40px;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
 textarea.form-control {
@@ -832,7 +835,7 @@ textarea.form-control {
 }
 .butto0nnknowledge {
   height: 39px;
-  width: 119px;
+  width: 8em;
   background-color: #000000;
   border: none;
   color: white;
@@ -845,7 +848,7 @@ textarea.form-control {
   cursor: pointer;
   /* margin-top: 40px; */
   margin-bottom: 70px;
-  margin-left: 130px !important;
+  margin-left: 2em !important;
   border-radius: 50px;
   font-size: large;
 }
@@ -880,6 +883,7 @@ textarea.form-control {
   width: 10% !important;
   float: left;
   margin-right: 20px;
+  border-radius: 50%;
 }
 .texxtt {
   margin-top: 0px;
@@ -900,7 +904,7 @@ textarea.form-control {
   margin-top: 0px;
   /* margin-left: 20px; */
   /* margin-left: 90px; */
-  background-color:#0379db;
+  background-color: #0379db;
   /* background-color: rgba(128, 128, 128, 0.199); */
   border-radius: 25px 25px 0px 25px;
   width: fit-content;
@@ -910,22 +914,20 @@ textarea.form-control {
   word-break: break-word;
   /* position: relative; */
   padding: 10px;
-
-  
 }
 
-.text123{
-    background-color: rgba(128, 128, 128, 0.199);
-    margin-top: 0px;
-    margin-left: 90px;
-    border-radius: 25px 25px 25px 0px;
-    width: fit-content;
-    max-width: 80%;
-    word-wrap: break-word;
-    /* height: fit-content; */
-    word-break: break-word;
-    /* position: relative; */
-    padding: 10px;
+.text123 {
+  background-color: rgba(128, 128, 128, 0.199);
+  margin-top: 0px;
+  margin-left: 90px;
+  border-radius: 25px 25px 25px 0px;
+  width: fit-content;
+  max-width: 80%;
+  word-wrap: break-word;
+  /* height: fit-content; */
+  word-break: break-word;
+  /* position: relative; */
+  padding: 10px;
 }
 
 .custom-container-user {
@@ -1091,7 +1093,7 @@ textarea.form-control {
 .videochat {
   height: 620px;
   width: 100px;
-  overflow-y:auto;
+  overflow-y: auto;
   background-color: #fdffff;
   border-radius: 50px;
   margin-top: 80px;
@@ -1102,6 +1104,7 @@ textarea.form-control {
   margin-left: -80px;
 }
 .answers-video {
+  padding-top: 10px;
   scrollbar-width: auto;
   scrollbar-width: thin;
   scrollbar-width: none;
@@ -1119,11 +1122,12 @@ textarea.form-control {
   width: 10% !important;
   float: right;
   margin-right: 20px;
+  border-radius: 50%;
 }
 
 .container-chatgpt1 {
   align-items: center;
-  padding: 20px;
+  padding: 10px;
   color: rgba(236, 236, 241, 1);
   float: right;
 }
@@ -1168,7 +1172,7 @@ textarea.form-control {
 }
 .butto0nn11 {
   height: 39px;
-  width: 90px;
+  width: 125px;
   background-color: #000000;
   border: none;
   color: white;
@@ -1187,7 +1191,7 @@ textarea.form-control {
 }
 .butto0n11 {
   height: 39px;
-  width: 90px;
+  width: 125px;
   background-color: white;
   color: black;
   /* padding: 10px 50px; */
@@ -1517,4 +1521,7 @@ i.fa.fa-arrow-right.bgcolor-change {
   display: flex;
   align-items: center;
   /* Align items vertically */
+}
+.alink3 {
+  cursor: pointer;
 }

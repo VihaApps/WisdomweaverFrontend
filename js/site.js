@@ -81,12 +81,12 @@ $(document).ready(function () {
   });
 
   //Use this for development
-  $("#login").hide();
-  $("#landing_page").hide();
-  $("#chat").hide();
-  $("#knowledge_source").show();
-  $("#chat-video").hide();
-  $("#train-model").hide();
+  // $("#login").hide();
+  // $("#landing_page").hide();
+  // $("#chat").hide();
+  // $("#knowledge_source").show();
+  // $("#chat-video").hide();
+  // $("#train-model").hide();
   playIdleVideo();
 });
 
@@ -211,7 +211,7 @@ async function choose_avatar_page_click(gender) {
 
   $("#choose_avatar").hide();
   $("#stop-recording").hide();
-  $.blockUI();
+  $.blockUI({ message: "Hold on while we initialize the system..." });
   await connect();
   await initChat();
   // playIdleVideo();
@@ -291,6 +291,8 @@ function sendMessage() {
   $("#question").val("");
   $(".dot-flashing").hide();
   $("#send-button").show();
+  $(".butto0nn").attr("disabled", "disabled");
+  $(".butto0nn").text("Processing...");
   $.ajax({
     url: `${baseUrl}/chatbot`,
     type: "POST",
@@ -302,7 +304,8 @@ function sendMessage() {
     dataType: "json",
     success: function (data, text) {
       $.unblockUI();
-
+      $(".butto0nn").removeAttr("disabled");
+      $(".butto0nn").text("Send");
       if (data.error && data.error.length > 0) {
         alert(data.error);
       } else {
@@ -322,6 +325,8 @@ function sendMessage() {
       }
     },
     error: function (request, status, error) {
+      $(".butto0nn").removeAttr("disabled");
+      $(".butto0nn").text("Send");
       $.unblockUI();
       alert(request.responseText);
     },
@@ -342,7 +347,6 @@ function sendMessageKS() {
 
           <p class="pt-2 text textknowledge custom-konwledge-user containeerr">${$(
             "#question_ks"
-            
           ).val()}</p>
         </div>`;
   $(".answer_ks").append(questionHtml);
@@ -351,6 +355,8 @@ function sendMessageKS() {
   $(".dot-flashing").hide();
   $(".send-button-ks").hide();
   // $(".send-button-ks").addClass("disabled");
+  $(".butto0nnknowledge").attr("disabled", "disabled");
+  $(".butto0nnknowledge").text("Processing...");
 
   $.ajax({
     url: `${baseUrl}/knowledgeSource`,
@@ -363,14 +369,15 @@ function sendMessageKS() {
     dataType: "json",
     success: function (data, text) {
       $.unblockUI();
-
+      $(".butto0nnknowledge").removeAttr("disabled");
+      $(".butto0nnknowledge").text("Send");
       if (data.error.length > 0) {
         alert(data.error);
       } else {
         uid = Date.now();
         const answerHtml = `
         <div class="container-chatgpt">
-          <img src="images/chatgpt.png" alt="ChatGPT Avatar" class="user-avatar" />
+          <img src="images/Avatar3.png" alt="ChatGPT Avatar" class="user-avatar" />
           <p class="pt-2 text gptanswer${uid}"></p>
           <p class="pt-2 source_ks${uid}"></p>
         </div>
@@ -386,6 +393,8 @@ function sendMessageKS() {
       }
     },
     error: function (request, status, error) {
+      $(".butto0nnknowledge").removeAttr("disabled");
+      $(".butto0nnknowledge").text("Send");
       uid = Date.now();
       const answerHtml = `
         <div class="container-chatgpt">
@@ -443,6 +452,8 @@ function sendMessageVideo() {
   $("#start-recording").attr("disabled", "disabled");
   $("#start-recording").text("Processing...");
   $("#send-button").hide();
+  $("#message-video-section-send-button").attr("disabled", "disabled");
+  $("#message-video-section-send-button").text("Processing...");
   $.ajax({
     url: `${baseUrl}/chatbot`,
     type: "POST",
@@ -455,6 +466,8 @@ function sendMessageVideo() {
     success: async function (data, text) {
       $.unblockUI();
       console.log("dataaaaaaaaaaaa", data);
+      $("#message-video-section-send-button").removeAttr("disabled");
+      $("#message-video-section-send-button").text("Send");
       if (data.error && data.error.length > 0) {
         alert(data.error);
       } else {
@@ -478,6 +491,10 @@ function sendMessageVideo() {
         // chatdict.push({ role: "assistant", content: data.content });
         i = 0;
         typeWriter();
+        $(".answers-video").animate(
+          { scrollTop: $(".answers-video")[0].scrollHeight },
+          1000
+        );
         $(".dot-flashing").hide();
         $("#send-button").show();
 
@@ -487,6 +504,8 @@ function sendMessageVideo() {
       }
     },
     error: function (request, status, error) {
+      $("#message-video-section-send-button").removeAttr("disabled");
+      $("#message-video-section-send-button").text("Send");
       $.unblockUI();
       alert(request.responseText);
     },
@@ -509,10 +528,7 @@ function typeWriter() {
     $(".answer_ks").animate({ scrollTop: $(".answer_ks")[0].scrollHeight }, 0);
     $(`.gptanswer${uid}`).html($(`.gptanswer${uid}`).html() + txt.charAt(i));
     //TBD
-    // $(".answers-video").animate(
-    //   { scrollTop: $(".answers-video")[0].scrollHeight },
-    //   1000
-    // );
+
     i++;
     setTimeout(typeWriter, speed);
   } else {
@@ -560,13 +576,18 @@ function setAudioChat() {
 }
 
 function uploadAudioChat() {
+  $("#start-recording").attr("disabled", "disabled");
+  $("#start-recording").text("Processing...");
+  $("#message-video-section-send-button").attr("disabled", "disabled");
+  $("#message-video-section-send-button").text("Processing...");
+
   const audioBlob = new Blob(audioChunks, { type: "audio/wav" });
   const sizeInKilobytes = audioBlob.size / 1024;
   const sizeInMegabytes = sizeInKilobytes / 1024;
   if (sizeInMegabytes < 20) {
-    $.blockUI({
-      message: "<h1>Please wait, Processing recording..</h1>",
-    });
+    // $.blockUI({
+    //   message: "<h1>Please wait, Processing recording..</h1>",
+    // });
     const formData = new FormData();
     formData.append("audio", audioBlob);
 
@@ -580,6 +601,11 @@ function uploadAudioChat() {
       .then((response) => response.json())
       .then((data) => {
         $.unblockUI();
+
+        $("#start-recording").removeAttr("disabled");
+        $("#start-recording").text("Start Recording");
+        $("#message-video-section-send-button").removeAttr("disabled");
+        $("#message-video-section-send-button").text("Send");
         if (data.error && data.error.length > 0) {
           alert("Error in uploading file. Try again later.");
         } else {
@@ -589,6 +615,10 @@ function uploadAudioChat() {
         }
       })
       .catch((error) => {
+        $("#start-recording").removeAttr("disabled");
+        $("#start-recording").text("Start Recording");
+        $("#message-video-section-send-button").removeAttr("disabled");
+        $("#message-video-section-send-button").text("Send");
         $.unblockUI();
         console.error("Error uploading audio:", error);
         alert("Error uploading audio" + error);
@@ -751,9 +781,9 @@ function uploadFile() {
   const sizeInKilobytes = audioBlob.size / 1024;
   const sizeInMegabytes = sizeInKilobytes / 1024;
   if (sizeInMegabytes < 20) {
-    $.blockUI({
-      message: "<h1>Please wait, Processing recording..</h1>",
-    });
+    // $.blockUI({
+    //   message: "<h1>Please wait, Processing recording..</h1>",
+    // });
     const formData = new FormData();
     formData.append("audio", audioBlob);
     formData.append("email", email);
@@ -797,9 +827,9 @@ function transcribe() {
       email: $("#floatingInput").val(),
       filename: uploadFilename,
     };
-    $.blockUI({
-      message: "<h1>Please wait, Transcribing Text...</h1>",
-    });
+    // $.blockUI({
+    //   message: "<h1>Please wait, Transcribing Text...</h1>",
+    // });
     $.ajax({
       url: `${baseUrl}/transcribe`,
       type: "POST",
@@ -841,9 +871,9 @@ function summarize() {
       email: $("#floatingInput").val(),
       transcription: transcribedText,
     };
-    $.blockUI({
-      message: "<h1>Please wait, Summarizing Text...</h1>",
-    });
+    // $.blockUI({
+    //   message: "<h1>Please wait, Summarizing Text...</h1>",
+    // });
     $.ajax({
       url: `${baseUrl}/summarize`,
       type: "POST",
