@@ -1142,6 +1142,7 @@ textarea.form-control {
   word-wrap: break-word;
   word-break: break-word;
   padding: 10px;
+  color: white;
 }
 
 .custom-video {
