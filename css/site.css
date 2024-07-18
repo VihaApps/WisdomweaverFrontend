@@ -183,6 +183,7 @@ body {
   text-align: center;
   border: 2px solid #d7d7d7;
   transition: background-color 0.3s, color 0.3s;
+  /* background-color: #e5e5e5; */
 }
 
 #rcorners3:hover {
