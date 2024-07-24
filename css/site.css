@@ -336,7 +336,7 @@ body {
   width: 100%;
 
   position: relative;
-  background-image: url(/images/box.png);
+  background-image: url(../images/box.png);
   background-repeat: no-repeat;
   height: 665px;
   background-size: cover;

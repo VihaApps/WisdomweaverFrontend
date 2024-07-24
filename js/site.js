@@ -173,7 +173,9 @@ function logout() {
   $("#options_page").hide();
   $("#choose_avatar").hide();
   $("#knowledge_source").hide();
-
+  $("#floatingInput").val("");
+  $("#floatingPassword").val("");
+  $("#exampleCheck1").prop("checked", false);
   // $("#chat").show();
   // $("#login").hide();
   $(".dot-flashing").hide();
